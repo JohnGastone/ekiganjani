@@ -129,6 +129,9 @@ class _LiveCallScreenState extends State<LiveCallScreen> {
                   ),
                 ),
                 SizedBox(
+                  height: 20,
+                ),
+                SizedBox(
                   height: 50,
                   child: Text(
                     "Swipe down to hide chat",
@@ -138,7 +141,10 @@ class _LiveCallScreenState extends State<LiveCallScreen> {
                 ),
                 SizedBox(
                   height: 60,
-                  child: Icon(Icons.arrow_drop_down),
+                  child: Icon(
+                    Icons.arrow_downward,
+                    color: Colors.white,
+                  ),
                 )
               ],
             ),
