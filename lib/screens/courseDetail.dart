@@ -71,7 +71,7 @@ class _CoursedetailsState extends State<Coursedetails> {
               height: 15,
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 10, right: 10),
+              padding: const EdgeInsets.only(left: 2, right: 2),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -88,36 +88,16 @@ class _CoursedetailsState extends State<Coursedetails> {
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           Text(
-                            "Duration",
+                            "Session Duration",
                             style: GoogleFonts.spaceMono(
                                 fontSize: 15, color: Colors.grey),
                           ),
-                          Column(
-                            children: [
-                              Text(
-                                "09:30 AM",
-                                style: GoogleFonts.spaceMono(
-                                  fontSize: 15,
-                                  color: Color.fromARGB(255, 28, 39, 81),
-                                ),
-                              ),
-                              Center(
-                                child: Text(
-                                  "-",
-                                  style: GoogleFonts.spaceMono(
-                                    fontSize: 15,
-                                    color: Color.fromARGB(255, 28, 39, 81),
-                                  ),
-                                ),
-                              ),
-                              Text(
-                                "11:30 AM",
-                                style: GoogleFonts.spaceMono(
-                                  fontSize: 15,
-                                  color: Color.fromARGB(255, 28, 39, 81),
-                                ),
-                              ),
-                            ],
+                          Text(
+                            "09:30AM-10:30AM",
+                            style: GoogleFonts.spaceMono(
+                              fontSize: 15,
+                              color: Color.fromARGB(255, 28, 39, 81),
+                            ),
                           ),
                         ],
                       ),
@@ -152,6 +132,16 @@ class _CoursedetailsState extends State<Coursedetails> {
                     ],
                   )
                 ],
+              ),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 12, right: 2),
+              child: Text(
+                "In this 8-hour project-based course, you will learn how to",
+                style: GoogleFonts.spaceMono(fontSize: 19, color: Colors.grey),
               ),
             )
           ]),
