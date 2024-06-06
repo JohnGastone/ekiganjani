@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:ekiganjani/screens/homeScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -82,12 +83,34 @@ class _LandingscreenState extends State<Landingscreen> {
                     SizedBox(
                       height: 10,
                     ),
-                    Text(
-                      "eKiganjani",
-                      style: GoogleFonts.spaceMono(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w300,
-                        color: Colors.black,
+                    Padding(
+                      padding: const EdgeInsets.only(left: 28.0, right: 28.0),
+                      child: Text(
+                        "Here you can learn in demand skills at your own pace",
+                        style: GoogleFonts.spaceMono(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w300,
+                          color: Colors.black,
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 40,
+                    ),
+                    Align(
+                      alignment: Alignment.bottomCenter,
+                      child: SizedBox(
+                        height: 60,
+                        width: 250,
+                        child: FloatingActionButton(
+                          backgroundColor: Color.fromARGB(255, 28, 39, 81),
+                          onPressed: () => MyHomePage(),
+                          child: Text(
+                            "Get Started",
+                            style: GoogleFonts.spaceMono(
+                                fontSize: 25, color: Colors.white),
+                          ),
+                        ),
                       ),
                     )
                   ],
