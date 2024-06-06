@@ -15,6 +15,8 @@ class _LiveCallScreenState extends State<LiveCallScreen> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
+          width: MediaQuery.of(context).size.width,
+          height: MediaQuery.of(context).size.height,
           decoration: BoxDecoration(
               image: DecorationImage(image: AssetImage("./images/image.png"))),
         ),
