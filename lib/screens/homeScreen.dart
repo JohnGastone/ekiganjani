@@ -75,12 +75,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 20,
               ),
               Container(
-                width: 280,
+                width: 320,
                 height: 50,
                 decoration: BoxDecoration(
                     color: Colors.white24,
                     borderRadius: BorderRadius.circular(25)),
                 child: TextField(
+                  style:
+                      GoogleFonts.spaceMono(fontSize: 20, color: Colors.white),
                   decoration: InputDecoration(
                       border: InputBorder.none,
                       prefixIcon:
@@ -91,7 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       labelText: "Search course",
                       labelStyle: GoogleFonts.spaceMono(
-                          fontSize: 12, color: Colors.white)),
+                          fontSize: 17, color: Colors.white)),
                 ),
               ),
               SizedBox(
