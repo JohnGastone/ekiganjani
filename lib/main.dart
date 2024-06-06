@@ -1,8 +1,14 @@
-import 'package:ekiganjani/screens/homeScreen.dart';
+import 'package:ekiganjani/screens/landingScreen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() {
   runApp(const MyApp());
+
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // Set the app to fullscreen mode (hides the status bar and navigation bar)
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
 }
 
 class MyApp extends StatelessWidget {
@@ -13,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MyHomePage(),
+      home: Landingscreen(),
     );
   }
 }
