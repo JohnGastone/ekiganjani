@@ -75,10 +75,24 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 20,
               ),
               Container(
+                width: 280,
+                height: 50,
                 decoration: BoxDecoration(
                     color: Colors.white24,
                     borderRadius: BorderRadius.circular(25)),
-                child: TextField(),
+                child: TextField(
+                  decoration: InputDecoration(
+                      border: InputBorder.none,
+                      prefixIcon:
+                          Icon(CupertinoIcons.search, color: Colors.white),
+                      suffixIcon: Icon(
+                        CupertinoIcons.mic,
+                        color: Colors.white,
+                      ),
+                      labelText: "Search course",
+                      labelStyle: GoogleFonts.spaceMono(
+                          fontSize: 12, color: Colors.white)),
+                ),
               )
             ],
           ),
