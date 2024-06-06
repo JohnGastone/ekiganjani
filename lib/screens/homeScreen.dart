@@ -26,31 +26,32 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 28, 39, 81),
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         backgroundColor: Color.fromARGB(255, 28, 39, 81),
         title: Row(
           children: [
-            CircleAvatar(
-              child: Icon(CupertinoIcons.person),
+            Row(
+              children: [
+                CircleAvatar(
+                  child: Icon(CupertinoIcons.person),
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Text(
+                  "Hello, John",
+                  style:
+                      GoogleFonts.spaceMono(fontSize: 20, color: Colors.white),
+                )
+              ],
             ),
-            SizedBox(
-              width: 10,
-            ),
-            Text(
-              "Hello, John",
-              style: GoogleFonts.spaceMono(fontSize: 20, color: Colors.white),
-            )
           ],
         ),
       ),
       body: Center(
         child: SingleChildScrollView(
           child: Column(
-            children: [
-              Text(
-                "Home Screen",
-                style: GoogleFonts.spaceMono(fontSize: 40),
-              )
-            ],
+            children: [],
           ),
         ),
       ),
