@@ -14,7 +14,7 @@ class _LandingscreenState extends State<Landingscreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 25, 81, 108),
+      backgroundColor: Color.fromARGB(255, 28, 39, 81),
       body: SingleChildScrollView(
         child: Center(
           child: Column(
@@ -44,15 +44,18 @@ class _LandingscreenState extends State<Landingscreen> {
               SizedBox(
                 height: 15,
               ),
-              Image.asset("./images/g.jpg"),
+              Image.asset("./images/g.png"),
               Container(
                 height: 1000,
                 width: double.maxFinite,
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.only(
-                        topRight: Radius.circular(70),
-                        topLeft: Radius.circular(70))),
+                        topRight: Radius.circular(100),
+                        topLeft: Radius.circular(100))),
+                child: Column(
+                  children: [],
+                ),
               )
             ],
           ),
