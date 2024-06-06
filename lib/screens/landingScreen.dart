@@ -86,7 +86,7 @@ class _LandingscreenState extends State<Landingscreen> {
                     Padding(
                       padding: const EdgeInsets.only(left: 28.0, right: 28.0),
                       child: Text(
-                        "Here you can learn in demand skills at your own pace",
+                        "Here you can learn in demand skills at your own pace, you are not late start now!!",
                         style: GoogleFonts.spaceMono(
                           fontSize: 20,
                           fontWeight: FontWeight.w300,
