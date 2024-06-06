@@ -93,6 +93,39 @@ class _MyHomePageState extends State<MyHomePage> {
                       labelStyle: GoogleFonts.spaceMono(
                           fontSize: 12, color: Colors.white)),
                 ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Container(
+                    height: 120,
+                    width: 80,
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10)),
+                    child: Column(
+                      children: [
+                        Icon(
+                          CupertinoIcons.hand_draw,
+                          color: Color.fromARGB(255, 28, 39, 81),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          "Design",
+                          style: GoogleFonts.spaceMono(
+                            fontSize: 18,
+                            color: Color.fromARGB(255, 28, 39, 81),
+                          ),
+                        )
+                      ],
+                    ),
+                  )
+                ],
               )
             ],
           ),
