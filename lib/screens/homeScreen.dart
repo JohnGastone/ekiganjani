@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -23,7 +24,16 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: SingleChildScrollView(),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Text(
+                "Home Screen",
+                style: GoogleFonts.spaceMono(fontSize: 40),
+              )
+            ],
+          ),
+        ),
       ),
     );
   }
