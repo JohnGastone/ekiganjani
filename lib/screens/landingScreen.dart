@@ -40,6 +40,19 @@ class _LandingscreenState extends State<Landingscreen> {
                         ))
                   ],
                 ),
+              ),
+              SizedBox(
+                height: 15,
+              ),
+              Image.asset("./images/g.jpg"),
+              Container(
+                height: 1000,
+                width: double.maxFinite,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                        topRight: Radius.circular(70),
+                        topLeft: Radius.circular(70))),
               )
             ],
           ),
