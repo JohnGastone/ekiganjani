@@ -206,6 +206,45 @@ class _MyHomePageState extends State<MyHomePage> {
                     )
                   ],
                 ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(left: 15, right: 15, top: 15),
+                child: Container(
+                  height: 250,
+                  width: 170,
+                  decoration: BoxDecoration(
+                      color: Colors.white24,
+                      borderRadius: BorderRadius.circular(20)),
+                  child: Column(
+                    children: [
+                      Container(
+                        height: 170,
+                        width: 170,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.only(
+                                topRight: Radius.circular(20),
+                                topLeft: Radius.circular(20)),
+                            image: DecorationImage(
+                                fit: BoxFit.cover,
+                                image: AssetImage("./images/image.png"))),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          children: [
+                            Text(
+                              "UI/UX Design",
+                              style: GoogleFonts.spaceMono(
+                                  color: Colors.white,
+                                  fontSize: 21,
+                                  fontWeight: FontWeight.bold),
+                            )
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                ),
               )
             ],
           ),
