@@ -186,17 +186,26 @@ class _MyHomePageState extends State<MyHomePage> {
                   )
                 ],
               ),
-              Row(
-                children: [
-                  Text(
-                    "TRending Courses",
-                    style: GoogleFonts.spaceMono(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 22,
-                      color: Color.fromARGB(255, 28, 39, 81),
+              Padding(
+                padding: const EdgeInsets.only(left: 10, right: 10, top: 20),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "Trending Courses",
+                      style: GoogleFonts.spaceMono(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 22,
+                        color: Colors.white,
+                      ),
                     ),
-                  )
-                ],
+                    Text(
+                      "See All",
+                      style: GoogleFonts.spaceMono(
+                          fontSize: 15, color: Colors.grey),
+                    )
+                  ],
+                ),
               )
             ],
           ),
