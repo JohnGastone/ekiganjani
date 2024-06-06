@@ -2,6 +2,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class LiveCallScreen extends StatefulWidget {
   const LiveCallScreen({super.key});
@@ -62,6 +63,32 @@ class _LiveCallScreenState extends State<LiveCallScreen> {
                       )
                     ],
                   ),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: Container(
+                    width: 100,
+                    height: 40,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(30),
+                        color: Colors.white24),
+                    child: Center(
+                      child: Text(
+                        "08:24",
+                        style: GoogleFonts.spaceMono(
+                            fontSize: 20, color: Colors.white),
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Row(
+                  children: [],
                 )
               ],
             ),
