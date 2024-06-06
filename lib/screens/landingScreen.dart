@@ -54,7 +54,32 @@ class _LandingscreenState extends State<Landingscreen> {
                         topRight: Radius.circular(100),
                         topLeft: Radius.circular(100))),
                 child: Column(
-                  children: [],
+                  children: [
+                    Image.asset(
+                      "./images/more.png",
+                      height: 50,
+                      width: 50,
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Text(
+                      "Welcome",
+                      style: GoogleFonts.spaceMono(
+                          fontSize: 30, fontWeight: FontWeight.bold),
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Text(
+                      "eKiganjani",
+                      style: GoogleFonts.spaceMono(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                        color: Color.fromARGB(255, 28, 39, 81),
+                      ),
+                    )
+                  ],
                 ),
               )
             ],
