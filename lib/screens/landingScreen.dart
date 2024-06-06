@@ -69,7 +69,7 @@ class _LandingscreenState extends State<Landingscreen> {
                           fontSize: 30, fontWeight: FontWeight.bold),
                     ),
                     SizedBox(
-                      height: 20,
+                      height: 10,
                     ),
                     Text(
                       "eKiganjani",
@@ -77,6 +77,17 @@ class _LandingscreenState extends State<Landingscreen> {
                         fontSize: 30,
                         fontWeight: FontWeight.bold,
                         color: Color.fromARGB(255, 28, 39, 81),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      "eKiganjani",
+                      style: GoogleFonts.spaceMono(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w300,
+                        color: Colors.black,
                       ),
                     )
                   ],
