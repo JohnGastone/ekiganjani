@@ -29,11 +29,16 @@ class _MyHomePageState extends State<MyHomePage> {
         automaticallyImplyLeading: false,
         backgroundColor: Color.fromARGB(255, 28, 39, 81),
         title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Row(
               children: [
                 CircleAvatar(
-                  child: Icon(CupertinoIcons.person),
+                  backgroundColor: Color.fromARGB(255, 28, 39, 81),
+                  child: Icon(
+                    CupertinoIcons.person,
+                    color: Colors.white,
+                  ),
                 ),
                 SizedBox(
                   width: 10,
@@ -45,13 +50,28 @@ class _MyHomePageState extends State<MyHomePage> {
                 )
               ],
             ),
+            CircleAvatar(
+              backgroundColor: Color.fromARGB(255, 28, 39, 81),
+              child: Icon(
+                CupertinoIcons.bell,
+                color: Colors.white,
+              ),
+            ),
           ],
         ),
       ),
       body: Center(
         child: SingleChildScrollView(
           child: Column(
-            children: [],
+            children: [
+              Text(
+                "Find your favourite\nCourse here!",
+                style: GoogleFonts.spaceMono(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
+              ),
+            ],
           ),
         ),
       ),
