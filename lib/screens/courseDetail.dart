@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -57,9 +57,102 @@ class _CoursedetailsState extends State<Coursedetails> {
                       image: AssetImage("./images/image.png"),
                       fit: BoxFit.cover)),
             ),
+            SizedBox(
+              height: 15,
+            ),
             Text(
               "UI/UX Design Course",
-              style: GoogleFonts.spaceMono(fontSize: 25),
+              style: GoogleFonts.spaceMono(
+                fontSize: 25,
+                color: Color.fromARGB(255, 28, 39, 81),
+              ),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 10, right: 10),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Row(
+                    children: [
+                      Icon(
+                        CupertinoIcons.clock,
+                        color: Color.fromARGB(255, 28, 39, 81),
+                      ),
+                      SizedBox(
+                        width: 6,
+                      ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Text(
+                            "Duration",
+                            style: GoogleFonts.spaceMono(
+                                fontSize: 15, color: Colors.grey),
+                          ),
+                          Column(
+                            children: [
+                              Text(
+                                "09:30 AM",
+                                style: GoogleFonts.spaceMono(
+                                  fontSize: 15,
+                                  color: Color.fromARGB(255, 28, 39, 81),
+                                ),
+                              ),
+                              Center(
+                                child: Text(
+                                  "-",
+                                  style: GoogleFonts.spaceMono(
+                                    fontSize: 15,
+                                    color: Color.fromARGB(255, 28, 39, 81),
+                                  ),
+                                ),
+                              ),
+                              Text(
+                                "11:30 AM",
+                                style: GoogleFonts.spaceMono(
+                                  fontSize: 15,
+                                  color: Color.fromARGB(255, 28, 39, 81),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Icon(
+                        CupertinoIcons.person_2_fill,
+                        color: Color.fromARGB(255, 28, 39, 81),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Text(
+                            "Students Count",
+                            style: GoogleFonts.spaceMono(
+                                fontSize: 15, color: Colors.grey),
+                          ),
+                          Text(
+                            "250 Students",
+                            style: GoogleFonts.spaceMono(
+                              fontSize: 15,
+                              color: Color.fromARGB(255, 28, 39, 81),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  )
+                ],
+              ),
             )
           ]),
     );
