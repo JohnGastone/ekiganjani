@@ -71,6 +71,15 @@ class _MyHomePageState extends State<MyHomePage> {
                     fontWeight: FontWeight.bold,
                     color: Colors.white),
               ),
+              SizedBox(
+                height: 20,
+              ),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.white24,
+                    borderRadius: BorderRadius.circular(25)),
+                child: TextField(),
+              )
             ],
           ),
         ),
