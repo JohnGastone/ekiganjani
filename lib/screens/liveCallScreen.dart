@@ -65,7 +65,7 @@ class _LiveCallScreenState extends State<LiveCallScreen> {
                   ),
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 250,
                 ),
                 Padding(
                   padding: const EdgeInsets.all(15.0),
@@ -87,9 +87,55 @@ class _LiveCallScreenState extends State<LiveCallScreen> {
                 SizedBox(
                   height: 20,
                 ),
-                Row(
-                  children: [],
-                )
+                Padding(
+                  padding: const EdgeInsets.only(left: 20, right: 20),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      SizedBox(
+                        height: 60,
+                        width: 60,
+                        child: CircleAvatar(
+                          backgroundColor: Colors.white24,
+                          child: Icon(
+                            CupertinoIcons.videocam,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 60,
+                        width: 60,
+                        child: CircleAvatar(
+                          backgroundColor: Colors.redAccent,
+                          child: Icon(
+                            CupertinoIcons.phone,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 60,
+                        width: 60,
+                        child: CircleAvatar(
+                          backgroundColor: Colors.white24,
+                          child: Icon(
+                            CupertinoIcons.mic,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: 50,
+                  child: Text(
+                    "Swipe down to hide chat",
+                    style: GoogleFonts.spaceMono(
+                        fontSize: 15, color: Colors.white),
+                  ),
+                ),
               ],
             ),
           ),
