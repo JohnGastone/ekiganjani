@@ -167,14 +167,14 @@ class _MyHomePageState extends State<MyHomePage> {
                       child: Column(
                         children: [
                           Icon(
-                            CupertinoIcons.hand_draw,
+                            CupertinoIcons.text_badge_checkmark,
                             color: Color.fromARGB(255, 28, 39, 81),
                           ),
                           SizedBox(
                             height: 40,
                           ),
                           Text(
-                            "Design",
+                            "Editing",
                             style: GoogleFonts.spaceMono(
                               fontSize: 18,
                               color: Color.fromARGB(255, 28, 39, 81),
@@ -182,6 +182,18 @@ class _MyHomePageState extends State<MyHomePage> {
                           )
                         ],
                       ),
+                    ),
+                  )
+                ],
+              ),
+              Row(
+                children: [
+                  Text(
+                    "TRending Courses",
+                    style: GoogleFonts.spaceMono(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 22,
+                      color: Color.fromARGB(255, 28, 39, 81),
                     ),
                   )
                 ],
