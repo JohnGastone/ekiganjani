@@ -104,7 +104,12 @@ class _LandingscreenState extends State<Landingscreen> {
                         width: 250,
                         child: FloatingActionButton(
                           backgroundColor: Color.fromARGB(255, 28, 39, 81),
-                          onPressed: () => MyHomePage(),
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => MyHomePage()));
+                          },
                           child: Text(
                             "Get Started",
                             style: GoogleFonts.spaceMono(

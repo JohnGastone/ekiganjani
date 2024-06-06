@@ -1,5 +1,6 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -23,6 +24,24 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 28, 39, 81),
+      appBar: AppBar(
+        backgroundColor: Color.fromARGB(255, 28, 39, 81),
+        title: Row(
+          children: [
+            CircleAvatar(
+              child: Icon(CupertinoIcons.person),
+            ),
+            SizedBox(
+              width: 10,
+            ),
+            Text(
+              "Hello, John",
+              style: GoogleFonts.spaceMono(fontSize: 20, color: Colors.white),
+            )
+          ],
+        ),
+      ),
       body: Center(
         child: SingleChildScrollView(
           child: Column(
