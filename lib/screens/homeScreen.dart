@@ -211,15 +211,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 padding: EdgeInsets.only(left: 15, right: 15, top: 15),
                 child: Container(
                   height: 250,
-                  width: 170,
+                  width: 200,
                   decoration: BoxDecoration(
                       color: Colors.white24,
                       borderRadius: BorderRadius.circular(20)),
                   child: Column(
                     children: [
                       Container(
-                        height: 170,
-                        width: 170,
+                        height: 140,
+                        width: 200,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.only(
                                 topRight: Radius.circular(20),
@@ -231,15 +231,31 @@ class _MyHomePageState extends State<MyHomePage> {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
                               "UI/UX Design",
                               style: GoogleFonts.spaceMono(
                                   color: Colors.white,
-                                  fontSize: 21,
+                                  fontSize: 18,
                                   fontWeight: FontWeight.bold),
+                            ),
+                            Icon(
+                              CupertinoIcons.heart_fill,
+                              color: Colors.white,
                             )
                           ],
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 90),
+                        child: Text(
+                          "20 Lectures",
+                          style: GoogleFonts.spaceMono(
+                              fontSize: 15, color: Colors.grey),
                         ),
                       )
                     ],
