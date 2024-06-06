@@ -136,6 +136,10 @@ class _LiveCallScreenState extends State<LiveCallScreen> {
                         fontSize: 15, color: Colors.white),
                   ),
                 ),
+                SizedBox(
+                  height: 60,
+                  child: Icon(Icons.arrow_drop_down),
+                )
               ],
             ),
           ),
