@@ -197,7 +197,22 @@ class _CoursedetailsState extends State<Coursedetails> {
                       GoogleFonts.spaceMono(fontSize: 18, color: Colors.grey))
             ],
           ),
-        )
+        ),
+        SizedBox(
+          height: 20,
+        ),
+        Card(
+            color: Colors.white24,
+            elevation: 5,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(15),
+            ),
+            child: Padding(
+              padding: EdgeInsets.all(15),
+              child: Row(
+                children: [],
+              ),
+            ))
       ]),
     );
   }
