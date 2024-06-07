@@ -248,7 +248,11 @@ class _CoursedetailsState extends State<Coursedetails> {
                   SizedBox(
                     width: 10,
                   ),
-                  Icon(CupertinoIcons.at_circle)
+                  Image.asset(
+                    ("./images/progress.png"),
+                    height: 90,
+                    width: 90,
+                  )
                 ],
               ),
             ))
