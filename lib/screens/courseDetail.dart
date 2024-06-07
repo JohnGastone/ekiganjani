@@ -224,7 +224,7 @@ class _CoursedetailsState extends State<Coursedetails> {
                     width: 10,
                   ),
                   Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
                         "Definition of Design",
