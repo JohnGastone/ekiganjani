@@ -97,50 +97,54 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
                 child: Padding(
                   padding: const EdgeInsets.only(
                       left: 10, right: 10, top: 10, bottom: 10),
-                  child: Card(
-                    color: Colors.white24,
-                    child: Row(
-                      children: [
-                        Container(
-                          height: 80,
-                          width: 80,
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(12),
-                              image: DecorationImage(
-                                  image: AssetImage("./images/image.png"))),
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "UI/UX Design",
-                              style: GoogleFonts.spaceMono(
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.blue),
-                            ),
-                            Row(
-                              children: [
-                                Icon(
-                                  CupertinoIcons.person,
-                                  color: Colors.grey,
-                                ),
-                                SizedBox(
-                                  width: 8,
-                                ),
-                                Text(
-                                  "Omary Mkuse",
-                                  style: GoogleFonts.spaceMono(
-                                      fontSize: 16, color: Colors.grey),
-                                )
-                              ],
-                            )
-                          ],
-                        )
-                      ],
+                  child: SizedBox(
+                    width: 300,
+                    height: 100,
+                    child: Card(
+                      color: Colors.white24,
+                      child: Row(
+                        children: [
+                          Container(
+                            height: 80,
+                            width: 80,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(12),
+                                image: DecorationImage(
+                                    image: AssetImage("./images/image.png"))),
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "UI/UX Design",
+                                style: GoogleFonts.spaceMono(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.blue),
+                              ),
+                              Row(
+                                children: [
+                                  Icon(
+                                    CupertinoIcons.person,
+                                    color: Colors.grey,
+                                  ),
+                                  SizedBox(
+                                    width: 8,
+                                  ),
+                                  Text(
+                                    "Omary Mkuse",
+                                    style: GoogleFonts.spaceMono(
+                                        fontSize: 16, color: Colors.grey),
+                                  )
+                                ],
+                              )
+                            ],
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ),
