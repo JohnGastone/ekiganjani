@@ -96,6 +96,16 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
                 padding: const EdgeInsets.only(left: 15, right: 15, top: 20),
                 child: Card(
                   color: Colors.white24,
+                  child: Row(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(12),
+                            image: DecorationImage(
+                                image: AssetImage("./images/image.png"))),
+                      )
+                    ],
+                  ),
                 ),
               )
             ],
