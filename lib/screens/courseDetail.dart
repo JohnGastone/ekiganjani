@@ -138,12 +138,21 @@ class _CoursedetailsState extends State<Coursedetails> {
               height: 15,
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 15, right: 2),
-              child: Text(
-                "In this 8-hour project-based course, you will learn how to craft beautful and elegant User interfaces",
-                style: GoogleFonts.spaceMono(fontSize: 19, color: Colors.grey),
-              ),
-            )
+                padding: const EdgeInsets.only(left: 15, right: 2),
+                child: Text.rich(TextSpan(children: <TextSpan>[
+                  TextSpan(
+                    text:
+                        "In this 8-hour project-based course, you will learn how to craft beautful and elegant User interfaces... ",
+                    style: GoogleFonts.spaceMono(
+                      fontSize: 19,
+                      color: Colors.grey,
+                    ),
+                  ),
+                  TextSpan(
+                      text: " See More",
+                      style: GoogleFonts.spaceMono(
+                          fontSize: 20, color: Colors.blue))
+                ])))
           ]),
     );
   }
