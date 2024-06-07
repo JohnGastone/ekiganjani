@@ -138,9 +138,9 @@ class _CoursedetailsState extends State<Coursedetails> {
               height: 15,
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 12, right: 2),
+              padding: const EdgeInsets.only(left: 15, right: 2),
               child: Text(
-                "In this 8-hour project-based course, you will learn how to",
+                "In this 8-hour project-based course, you will learn how to craft beautful and elegant User interfaces",
                 style: GoogleFonts.spaceMono(fontSize: 19, color: Colors.grey),
               ),
             )
