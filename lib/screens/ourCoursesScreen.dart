@@ -90,7 +90,7 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
                 ),
               ),
               SizedBox(
-                height: 20,
+                height: 10,
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 15, right: 15, top: 20),
