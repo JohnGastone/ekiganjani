@@ -53,7 +53,7 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
                   width: 300,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(12),
-                    color: Colors.blueGrey,
+                    color: Colors.grey,
                   ),
                   child: Row(
                     children: [
@@ -75,7 +75,7 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
                         width: 150,
                         height: 50,
                         decoration: BoxDecoration(
-                            color: Colors.blueGrey,
+                            color: Colors.grey,
                             borderRadius: BorderRadius.circular(12)),
                         child: Center(
                           child: Text(
