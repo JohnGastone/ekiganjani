@@ -241,7 +241,7 @@ class _CoursedetailsState extends State<Coursedetails> {
                             height: 15,
                           ),
                           Text(
-                            "2:30b minutes",
+                            "2:30 minutes",
                             style: GoogleFonts.spaceMono(
                                 fontSize: 16,
                                 color: Colors.grey,
@@ -249,9 +249,7 @@ class _CoursedetailsState extends State<Coursedetails> {
                           )
                         ],
                       ),
-                      SizedBox(
-                        width: 10,
-                      ),
+                      Spacer(),
                       Image.asset(
                         ("./images/progress.png"),
                         height: 50,
@@ -307,9 +305,7 @@ class _CoursedetailsState extends State<Coursedetails> {
                           )
                         ],
                       ),
-                      SizedBox(
-                        width: 10,
-                      ),
+                      Spacer(),
                       Image.asset(
                         ("./images/progress.png"),
                         height: 50,
@@ -365,9 +361,7 @@ class _CoursedetailsState extends State<Coursedetails> {
                           )
                         ],
                       ),
-                      SizedBox(
-                        width: 10,
-                      ),
+                      Spacer(),
                       Image.asset(
                         ("./images/progress.png"),
                         height: 50,
@@ -423,9 +417,7 @@ class _CoursedetailsState extends State<Coursedetails> {
                           )
                         ],
                       ),
-                      SizedBox(
-                        width: 10,
-                      ),
+                      Spacer(),
                       Image.asset(
                         ("./images/progress.png"),
                         height: 50,
