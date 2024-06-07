@@ -108,6 +108,34 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
                               borderRadius: BorderRadius.circular(12),
                               image: DecorationImage(
                                   image: AssetImage("./images/image.png"))),
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "UI/UX Design",
+                              style: GoogleFonts.spaceMono(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.blue),
+                            ),
+                            Row(
+                              children: [
+                                Icon(
+                                  CupertinoIcons.person,
+                                  color: Colors.grey,
+                                ),
+                                Text(
+                                  "Omary Mkuse",
+                                  style: GoogleFonts.spaceMono(
+                                      fontSize: 16, color: Colors.grey),
+                                )
+                              ],
+                            )
+                          ],
                         )
                       ],
                     ),
