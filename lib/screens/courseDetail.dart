@@ -262,23 +262,26 @@ class _CoursedetailsState extends State<Coursedetails> {
           SizedBox(
             height: 12,
           ),
-          Row(
-            children: [
-              Container(
-                height: 50,
-                width: 50,
-                decoration: BoxDecoration(
-                    color: Colors.blue,
-                    borderRadius: BorderRadius.circular(10)),
-                child: Center(
-                  child: Text(
-                    "\$ 25",
-                    style: GoogleFonts.spaceMono(
-                        fontSize: 16, color: Colors.white),
+          Padding(
+            padding: const EdgeInsets.only(left: 15, right: 15),
+            child: Row(
+              children: [
+                Container(
+                  height: 50,
+                  width: 50,
+                  decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(10)),
+                  child: Center(
+                    child: Text(
+                      "\$ 25",
+                      style: GoogleFonts.spaceMono(
+                          fontSize: 16, color: Colors.white),
+                    ),
                   ),
-                ),
-              )
-            ],
+                )
+              ],
+            ),
           )
         ]),
       ),
