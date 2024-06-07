@@ -2,6 +2,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ChatScreen extends StatefulWidget {
   const ChatScreen({super.key});
@@ -16,8 +17,20 @@ class _ChatScreenState extends State<ChatScreen> {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        title: Row(
-          children: [Icon(CupertinoIcons.person)],
+        title: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Row(
+            children: [
+              Icon(CupertinoIcons.person),
+              SizedBox(
+                width: 80,
+              ),
+              Text(
+                "Chats",
+                style: GoogleFonts.spaceMono(fontSize: 30, color: Colors.blue),
+              )
+            ],
+          ),
         ),
       ),
       body: Center(
