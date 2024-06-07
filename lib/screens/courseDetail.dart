@@ -279,7 +279,36 @@ class _CoursedetailsState extends State<Coursedetails> {
                           fontSize: 16, color: Colors.white),
                     ),
                   ),
-                )
+                ),
+                SizedBox(
+                  width: 20,
+                ),
+                Container(
+                  height: 50,
+                  width: 250,
+                  decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(10)),
+                  child: Center(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          "Buy Now",
+                          style: GoogleFonts.spaceMono(
+                              fontSize: 16, color: Colors.white),
+                        ),
+                        SizedBox(
+                          width: 5,
+                        ),
+                        Icon(
+                          CupertinoIcons.arrow_right,
+                          color: Colors.white,
+                        )
+                      ],
+                    ),
+                  ),
+                ),
               ],
             ),
           )
