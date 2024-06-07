@@ -177,6 +177,16 @@ class _CoursedetailsState extends State<Coursedetails> {
                         color: Colors.blue,
                         fontWeight: FontWeight.bold),
                   ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Container(
+                    height: 3,
+                    width: 115,
+                    decoration: BoxDecoration(
+                        color: Colors.blue,
+                        borderRadius: BorderRadius.circular(10)),
+                  )
                 ],
               ),
               SizedBox(
