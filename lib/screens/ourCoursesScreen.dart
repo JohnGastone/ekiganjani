@@ -98,8 +98,8 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
                   padding: const EdgeInsets.only(
                       left: 10, right: 10, top: 10, bottom: 10),
                   child: SizedBox(
-                    width: 300,
-                    height: 100,
+                    width: 350,
+                    height: 123,
                     child: Card(
                       color: Colors.white24,
                       child: Padding(
@@ -143,6 +143,58 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
                                           fontSize: 16, color: Colors.grey),
                                     )
                                   ],
+                                ),
+                                SizedBox(
+                                  height: 10,
+                                ),
+                                Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text(
+                                        "12/15 Videos",
+                                        style: GoogleFonts.spaceMono(
+                                            fontSize: 16, color: Colors.grey),
+                                      ),
+                                      SizedBox(
+                                        width: 40,
+                                      ),
+                                      Text(
+                                        "75%",
+                                        style: GoogleFonts.spaceMono(
+                                            fontSize: 16, color: Colors.grey),
+                                      )
+                                    ]),
+                                SizedBox(
+                                  height: 10,
+                                ),
+                                Container(
+                                  height: 10,
+                                  width: 190,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(12),
+                                    color: Colors.white24,
+                                  ),
+                                  child: Row(
+                                    children: [
+                                      Container(
+                                        width: 143,
+                                        height: 10,
+                                        decoration: BoxDecoration(
+                                            color: Colors.blue,
+                                            borderRadius:
+                                                BorderRadius.circular(12)),
+                                      ),
+                                      Container(
+                                        width: 47,
+                                        height: 10,
+                                        decoration: BoxDecoration(
+                                            color: Colors.white24,
+                                            borderRadius:
+                                                BorderRadius.circular(12)),
+                                      ),
+                                    ],
+                                  ),
                                 )
                               ],
                             )
