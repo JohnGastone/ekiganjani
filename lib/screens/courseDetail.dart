@@ -210,7 +210,46 @@ class _CoursedetailsState extends State<Coursedetails> {
             child: Padding(
               padding: EdgeInsets.all(15),
               child: Row(
-                children: [],
+                children: [
+                  Container(
+                    height: 80,
+                    width: 80,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        image: DecorationImage(
+                            image: AssetImage("./images/image.png"),
+                            fit: BoxFit.cover)),
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Definition of Design",
+                        style: GoogleFonts.spaceMono(
+                            fontSize: 16,
+                            color: Colors.blue,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(
+                        height: 15,
+                      ),
+                      Text(
+                        "2:30",
+                        style: GoogleFonts.spaceMono(
+                            fontSize: 16,
+                            color: Colors.grey,
+                            fontWeight: FontWeight.w400),
+                      )
+                    ],
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Icon(CupertinoIcons.at_circle)
+                ],
               ),
             ))
       ]),
