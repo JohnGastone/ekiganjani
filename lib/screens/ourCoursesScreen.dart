@@ -42,8 +42,54 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
         ),
       ),
       body: SingleChildScrollView(
-        child: Column(
-          children: [],
+        child: Center(
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(left: 15, right: 15, top: 20),
+                child: Container(
+                  height: 50,
+                  width: 300,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    color: Colors.blueGrey,
+                  ),
+                  child: Row(
+                    children: [
+                      Container(
+                        width: 150,
+                        height: 50,
+                        decoration: BoxDecoration(
+                            color: Colors.blue,
+                            borderRadius: BorderRadius.circular(12)),
+                        child: Center(
+                          child: Text(
+                            "Ongoing",
+                            style: GoogleFonts.spaceMono(
+                                fontSize: 18, color: Colors.white),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        width: 150,
+                        height: 50,
+                        decoration: BoxDecoration(
+                            color: Colors.blueGrey,
+                            borderRadius: BorderRadius.circular(12)),
+                        child: Center(
+                          child: Text(
+                            "Complete",
+                            style: GoogleFonts.spaceMono(
+                                fontSize: 18, color: Colors.white),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
