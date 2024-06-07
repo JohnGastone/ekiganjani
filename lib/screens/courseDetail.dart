@@ -15,145 +15,146 @@ class _CoursedetailsState extends State<Coursedetails> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-          // ignore: prefer_const_literals_to_create_immutables
-          children: [
-            Padding(
-              padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                // ignore: prefer_const_literals_to_create_immutables
-                children: [
-                  CircleAvatar(
-                      backgroundColor: const Color.fromARGB(60, 214, 209, 209),
-                      child: Icon(
-                        Icons.arrow_back,
-                        color: Color.fromARGB(255, 28, 39, 81),
-                      )),
-                  Text("Course Details",
-                      style: GoogleFonts.spaceMono(
-                        fontSize: 25,
-                        fontWeight: FontWeight.bold,
-                        color: Color.fromARGB(255, 28, 39, 81),
-                      )),
-                  CircleAvatar(
-                      backgroundColor: const Color.fromARGB(60, 214, 209, 209),
-                      child: Icon(
-                        CupertinoIcons.heart,
-                        color: Color.fromARGB(255, 28, 39, 81),
-                      )),
-                ],
-              ),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            Container(
-              height: 150,
-              width: 300,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(15),
-                  image: DecorationImage(
-                      image: AssetImage("./images/image.png"),
-                      fit: BoxFit.cover)),
-            ),
-            SizedBox(
-              height: 15,
-            ),
-            Text(
-              "UI/UX Design Course",
-              style: GoogleFonts.spaceMono(
-                fontSize: 25,
-                color: Color.fromARGB(255, 28, 39, 81),
-              ),
-            ),
-            SizedBox(
-              height: 15,
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 2, right: 2),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Row(
-                    children: [
-                      Icon(
-                        CupertinoIcons.clock,
-                        color: Color.fromARGB(255, 28, 39, 81),
-                      ),
-                      SizedBox(
-                        width: 6,
-                      ),
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          Text(
-                            "Session Duration",
-                            style: GoogleFonts.spaceMono(
-                                fontSize: 15, color: Colors.grey),
-                          ),
-                          Text(
-                            "09:30AM-10:30AM",
-                            style: GoogleFonts.spaceMono(
-                              fontSize: 15,
-                              color: Color.fromARGB(255, 28, 39, 81),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                  Row(
-                    children: [
-                      Icon(
-                        CupertinoIcons.person_2_fill,
-                        color: Color.fromARGB(255, 28, 39, 81),
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          Text(
-                            "Students Count",
-                            style: GoogleFonts.spaceMono(
-                                fontSize: 15, color: Colors.grey),
-                          ),
-                          Text(
-                            "250 Students",
-                            style: GoogleFonts.spaceMono(
-                              fontSize: 15,
-                              color: Color.fromARGB(255, 28, 39, 81),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  )
-                ],
-              ),
-            ),
-            SizedBox(
-              height: 15,
-            ),
-            Padding(
-                padding: const EdgeInsets.only(left: 15, right: 2),
-                child: Text.rich(TextSpan(children: <TextSpan>[
-                  TextSpan(
-                    text:
-                        "In this 8-hour project-based course, you will learn how to craft beautful and elegant User interfaces... ",
-                    style: GoogleFonts.spaceMono(
-                      fontSize: 19,
-                      color: Colors.grey,
+      body: Column(children: [
+        Padding(
+          padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              CircleAvatar(
+                  backgroundColor: const Color.fromARGB(60, 214, 209, 209),
+                  child: InkWell(
+                    child: Icon(
+                      Icons.arrow_back,
+                      color: Color.fromARGB(255, 28, 39, 81),
                     ),
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                  )),
+              Text("Course Details",
+                  style: GoogleFonts.spaceMono(
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(255, 28, 39, 81),
+                  )),
+              CircleAvatar(
+                  backgroundColor: const Color.fromARGB(60, 214, 209, 209),
+                  child: Icon(
+                    CupertinoIcons.heart,
+                    color: Color.fromARGB(255, 28, 39, 81),
+                  )),
+            ],
+          ),
+        ),
+        SizedBox(
+          height: 20,
+        ),
+        Container(
+          height: 150,
+          width: 300,
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(15),
+              image: DecorationImage(
+                  image: AssetImage("./images/image.png"), fit: BoxFit.cover)),
+        ),
+        SizedBox(
+          height: 15,
+        ),
+        Text(
+          "UI/UX Design Course",
+          style: GoogleFonts.spaceMono(
+            fontSize: 25,
+            color: Color.fromARGB(255, 28, 39, 81),
+          ),
+        ),
+        SizedBox(
+          height: 15,
+        ),
+        Padding(
+          padding: const EdgeInsets.only(left: 2, right: 2),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Row(
+                children: [
+                  Icon(
+                    CupertinoIcons.clock,
+                    color: Color.fromARGB(255, 28, 39, 81),
                   ),
-                  TextSpan(
-                      text: " See More",
-                      style: GoogleFonts.spaceMono(
-                          fontSize: 20, color: Colors.blue))
-                ])))
-          ]),
+                  SizedBox(
+                    width: 6,
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Text(
+                        "Session Duration",
+                        style: GoogleFonts.spaceMono(
+                            fontSize: 15, color: Colors.grey),
+                      ),
+                      Text(
+                        "09:30AM-10:30AM",
+                        style: GoogleFonts.spaceMono(
+                          fontSize: 15,
+                          color: Color.fromARGB(255, 28, 39, 81),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Icon(
+                    CupertinoIcons.person_2_fill,
+                    color: Color.fromARGB(255, 28, 39, 81),
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Text(
+                        "Students Count",
+                        style: GoogleFonts.spaceMono(
+                            fontSize: 15, color: Colors.grey),
+                      ),
+                      Text(
+                        "250 Students",
+                        style: GoogleFonts.spaceMono(
+                          fontSize: 15,
+                          color: Color.fromARGB(255, 28, 39, 81),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              )
+            ],
+          ),
+        ),
+        SizedBox(
+          height: 15,
+        ),
+        Padding(
+            padding: const EdgeInsets.only(left: 15, right: 2),
+            child: Text.rich(TextSpan(children: <TextSpan>[
+              TextSpan(
+                text:
+                    "In this 8-hour project-based course, you will learn how to craft beautful and elegant User interfaces... ",
+                style: GoogleFonts.spaceMono(
+                  fontSize: 19,
+                  color: Colors.grey,
+                ),
+              ),
+              TextSpan(
+                  text: " See More",
+                  style:
+                      GoogleFonts.spaceMono(fontSize: 20, color: Colors.blue))
+            ])))
+      ]),
     );
   }
 }
