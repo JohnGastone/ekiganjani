@@ -241,7 +241,7 @@ class _CoursedetailsState extends State<Coursedetails> {
                             height: 15,
                           ),
                           Text(
-                            "2:30",
+                            "2:30b minutes",
                             style: GoogleFonts.spaceMono(
                                 fontSize: 16,
                                 color: Colors.grey,
@@ -289,7 +289,7 @@ class _CoursedetailsState extends State<Coursedetails> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "Definition of Design",
+                            "Design Principles",
                             style: GoogleFonts.spaceMono(
                                 fontSize: 16,
                                 color: Colors.blue,
@@ -299,7 +299,7 @@ class _CoursedetailsState extends State<Coursedetails> {
                             height: 15,
                           ),
                           Text(
-                            "2:30",
+                            "4:30 minutes",
                             style: GoogleFonts.spaceMono(
                                 fontSize: 16,
                                 color: Colors.grey,
@@ -347,7 +347,7 @@ class _CoursedetailsState extends State<Coursedetails> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "Definition of Design",
+                            "Design Manifesto",
                             style: GoogleFonts.spaceMono(
                                 fontSize: 16,
                                 color: Colors.blue,
@@ -357,7 +357,7 @@ class _CoursedetailsState extends State<Coursedetails> {
                             height: 15,
                           ),
                           Text(
-                            "2:30",
+                            "3:00 minutes",
                             style: GoogleFonts.spaceMono(
                                 fontSize: 16,
                                 color: Colors.grey,
@@ -405,7 +405,7 @@ class _CoursedetailsState extends State<Coursedetails> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "Definition of Design",
+                            "Design Tools",
                             style: GoogleFonts.spaceMono(
                                 fontSize: 16,
                                 color: Colors.blue,
@@ -415,7 +415,7 @@ class _CoursedetailsState extends State<Coursedetails> {
                             height: 15,
                           ),
                           Text(
-                            "2:30",
+                            "3:30 minutes",
                             style: GoogleFonts.spaceMono(
                                 fontSize: 16,
                                 color: Colors.grey,
