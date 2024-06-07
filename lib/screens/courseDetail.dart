@@ -163,8 +163,28 @@ class _CoursedetailsState extends State<Coursedetails> {
             children: [
               Text(
                 "Introduction",
-                style: GoogleFonts.spaceMono(fontSize: 21, color: Colors.grey),
-              )
+                style: GoogleFonts.spaceMono(fontSize: 18, color: Colors.grey),
+              ),
+              SizedBox(
+                width: 11,
+              ),
+              Column(
+                children: [
+                  Text(
+                    "Basic Design",
+                    style: GoogleFonts.spaceMono(
+                        fontSize: 18,
+                        color: Colors.blue,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ],
+              ),
+              SizedBox(
+                width: 11,
+              ),
+              Text("Benefits",
+                  style:
+                      GoogleFonts.spaceMono(fontSize: 18, color: Colors.grey))
             ],
           ),
         )
