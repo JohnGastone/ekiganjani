@@ -94,17 +94,23 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 15, right: 15, top: 20),
-                child: Card(
-                  color: Colors.white24,
-                  child: Row(
-                    children: [
-                      Container(
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(12),
-                            image: DecorationImage(
-                                image: AssetImage("./images/image.png"))),
-                      )
-                    ],
+                child: Padding(
+                  padding: const EdgeInsets.only(
+                      left: 10, right: 10, top: 10, bottom: 10),
+                  child: Card(
+                    color: Colors.white24,
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 80,
+                          width: 80,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(12),
+                              image: DecorationImage(
+                                  image: AssetImage("./images/image.png"))),
+                        )
+                      ],
+                    ),
                   ),
                 ),
               )
