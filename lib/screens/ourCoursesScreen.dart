@@ -128,6 +128,9 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
                                   CupertinoIcons.person,
                                   color: Colors.grey,
                                 ),
+                                SizedBox(
+                                  width: 8,
+                                ),
                                 Text(
                                   "Omary Mkuse",
                                   style: GoogleFonts.spaceMono(
