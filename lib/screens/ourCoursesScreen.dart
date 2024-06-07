@@ -29,7 +29,7 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
               Text(
                 "Our Courses",
                 style: GoogleFonts.spaceMono(
-                    fontSize: 19,
+                    fontSize: 24,
                     color: Colors.blue,
                     fontWeight: FontWeight.bold),
               ),
