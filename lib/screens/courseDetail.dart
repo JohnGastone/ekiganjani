@@ -153,7 +153,21 @@ class _CoursedetailsState extends State<Coursedetails> {
                   text: " See More",
                   style:
                       GoogleFonts.spaceMono(fontSize: 20, color: Colors.blue))
-            ])))
+            ]))),
+        SizedBox(
+          height: 35,
+        ),
+        Padding(
+          padding: const EdgeInsets.only(left: 15, right: 15),
+          child: Row(
+            children: [
+              Text(
+                "Introduction",
+                style: GoogleFonts.spaceMono(fontSize: 21, color: Colors.grey),
+              )
+            ],
+          ),
+        )
       ]),
     );
   }
