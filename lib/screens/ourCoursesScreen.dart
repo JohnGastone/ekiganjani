@@ -13,8 +13,16 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
+        title: Row(
+          children: [],
+        ),
+      ),
       body: SingleChildScrollView(
-        child: Column(),
+        child: Column(
+          children: [],
+        ),
       ),
     );
   }
