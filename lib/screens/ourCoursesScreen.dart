@@ -15,6 +15,7 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         automaticallyImplyLeading: false,
         title: Padding(
@@ -86,6 +87,15 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
                       ),
                     ],
                   ),
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 15, right: 15, top: 20),
+                child: Card(
+                  color: Colors.white24,
                 ),
               )
             ],
