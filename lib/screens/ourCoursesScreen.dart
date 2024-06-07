@@ -16,7 +16,6 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
         automaticallyImplyLeading: false,
         title: Padding(
           padding: const EdgeInsets.only(top: 15, right: 15, left: 15),
