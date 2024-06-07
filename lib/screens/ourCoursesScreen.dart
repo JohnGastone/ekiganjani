@@ -318,6 +318,224 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
                   ),
                 ),
               ),
+              Padding(
+                padding: const EdgeInsets.only(left: 15, right: 15, top: 20),
+                child: Padding(
+                  padding: const EdgeInsets.only(
+                      left: 10, right: 10, top: 10, bottom: 10),
+                  child: SizedBox(
+                    width: 350,
+                    height: 123,
+                    child: Card(
+                      color: Colors.white24,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          children: [
+                            Container(
+                              height: 80,
+                              width: 80,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(12),
+                                  image: DecorationImage(
+                                      image: AssetImage("./images/image.png"),
+                                      fit: BoxFit.cover)),
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Video Editing",
+                                  style: GoogleFonts.spaceMono(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.blue),
+                                ),
+                                Row(
+                                  children: [
+                                    Icon(
+                                      CupertinoIcons.person,
+                                      color: Colors.grey,
+                                    ),
+                                    SizedBox(
+                                      width: 8,
+                                    ),
+                                    Text(
+                                      "Zeynab Kassim",
+                                      style: GoogleFonts.spaceMono(
+                                          fontSize: 16, color: Colors.grey),
+                                    )
+                                  ],
+                                ),
+                                SizedBox(
+                                  height: 10,
+                                ),
+                                Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text(
+                                        "20/20 Videos",
+                                        style: GoogleFonts.spaceMono(
+                                            fontSize: 16, color: Colors.grey),
+                                      ),
+                                      SizedBox(
+                                        width: 40,
+                                      ),
+                                      Text(
+                                        "100%",
+                                        style: GoogleFonts.spaceMono(
+                                            fontSize: 16, color: Colors.grey),
+                                      )
+                                    ]),
+                                SizedBox(
+                                  height: 10,
+                                ),
+                                Container(
+                                  height: 10,
+                                  width: 190,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(12),
+                                    color: Colors.white24,
+                                  ),
+                                  child: Row(
+                                    children: [
+                                      Container(
+                                        width: 190,
+                                        height: 10,
+                                        decoration: BoxDecoration(
+                                            color: Colors.blue,
+                                            borderRadius:
+                                                BorderRadius.circular(12)),
+                                      ),
+                                    ],
+                                  ),
+                                )
+                              ],
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 15, right: 15, top: 20),
+                child: Padding(
+                  padding: const EdgeInsets.only(
+                      left: 10, right: 10, top: 10, bottom: 10),
+                  child: SizedBox(
+                    width: 350,
+                    height: 123,
+                    child: Card(
+                      color: Colors.white24,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          children: [
+                            Container(
+                              height: 80,
+                              width: 80,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(12),
+                                  image: DecorationImage(
+                                      image: AssetImage("./images/image.png"),
+                                      fit: BoxFit.cover)),
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "App Development",
+                                  style: GoogleFonts.spaceMono(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.blue),
+                                ),
+                                Row(
+                                  children: [
+                                    Icon(
+                                      CupertinoIcons.person,
+                                      color: Colors.grey,
+                                    ),
+                                    SizedBox(
+                                      width: 8,
+                                    ),
+                                    Text(
+                                      "John Lugendo",
+                                      style: GoogleFonts.spaceMono(
+                                          fontSize: 16, color: Colors.grey),
+                                    )
+                                  ],
+                                ),
+                                SizedBox(
+                                  height: 10,
+                                ),
+                                Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text(
+                                        "10/30 Videos",
+                                        style: GoogleFonts.spaceMono(
+                                            fontSize: 16, color: Colors.grey),
+                                      ),
+                                      SizedBox(
+                                        width: 40,
+                                      ),
+                                      Text(
+                                        "33%",
+                                        style: GoogleFonts.spaceMono(
+                                            fontSize: 16, color: Colors.grey),
+                                      )
+                                    ]),
+                                SizedBox(
+                                  height: 10,
+                                ),
+                                Container(
+                                  height: 10,
+                                  width: 190,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(12),
+                                    color: Colors.white24,
+                                  ),
+                                  child: Row(
+                                    children: [
+                                      Container(
+                                        width: 64,
+                                        height: 10,
+                                        decoration: BoxDecoration(
+                                            color: Colors.blue,
+                                            borderRadius:
+                                                BorderRadius.circular(12)),
+                                      ),
+                                      Container(
+                                        width: 126,
+                                        height: 10,
+                                        decoration: BoxDecoration(
+                                            color: Colors.white24,
+                                            borderRadius:
+                                                BorderRadius.circular(12)),
+                                      ),
+                                    ],
+                                  ),
+                                )
+                              ],
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              )
             ],
           ),
         ),
