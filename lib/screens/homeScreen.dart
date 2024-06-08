@@ -34,7 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Row(
               children: [
                 CircleAvatar(
-                  backgroundColor: Color.fromARGB(255, 28, 39, 81),
+                  backgroundColor: Color.fromARGB(255, 18, 58, 93),
                   child: Icon(
                     CupertinoIcons.person,
                     color: Colors.white,
@@ -51,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
             CircleAvatar(
-              backgroundColor: Color.fromARGB(255, 28, 39, 81),
+              backgroundColor: Color.fromARGB(255, 18, 58, 93),
               child: Icon(
                 CupertinoIcons.bell,
                 color: Colors.white,
@@ -114,7 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         children: [
                           Icon(
                             CupertinoIcons.hand_draw,
-                            color: Color.fromARGB(255, 28, 39, 81),
+                            color: Color.fromARGB(255, 18, 58, 93),
                           ),
                           SizedBox(
                             height: 40,
@@ -123,7 +123,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             "Design",
                             style: GoogleFonts.spaceMono(
                               fontSize: 18,
-                              color: Color.fromARGB(255, 28, 39, 81),
+                              color: Color.fromARGB(255, 18, 58, 93),
                             ),
                           )
                         ],
@@ -142,7 +142,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         children: [
                           Icon(
                             CupertinoIcons.rocket_fill,
-                            color: Color.fromARGB(255, 28, 39, 81),
+                            color: Color.fromARGB(255, 18, 58, 93),
                           ),
                           SizedBox(
                             height: 40,
@@ -151,7 +151,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             "Marketing",
                             style: GoogleFonts.spaceMono(
                               fontSize: 18,
-                              color: Color.fromARGB(255, 28, 39, 81),
+                              color: Color.fromARGB(255, 18, 58, 93),
                             ),
                           )
                         ],
@@ -170,7 +170,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         children: [
                           Icon(
                             CupertinoIcons.text_badge_checkmark,
-                            color: Color.fromARGB(255, 28, 39, 81),
+                            color: Color.fromARGB(255, 18, 58, 93),
                           ),
                           SizedBox(
                             height: 40,
@@ -179,7 +179,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             "Editing",
                             style: GoogleFonts.spaceMono(
                               fontSize: 18,
-                              color: Color.fromARGB(255, 28, 39, 81),
+                              color: Color.fromARGB(255, 18, 58, 93),
                             ),
                           )
                         ],
