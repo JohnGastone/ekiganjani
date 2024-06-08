@@ -38,9 +38,22 @@ class _ChatScreenState extends State<ChatScreen> {
           child: Column(
             children: [
               Container(
+                  height: 50,
+                  width: 300,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
-                      color: Colors.lightBlue))
+                      color: Colors.lightBlue),
+                  child: TextField(
+                    decoration: InputDecoration(
+                        border: InputBorder.none,
+                        prefixIcon: Icon(
+                          CupertinoIcons.search,
+                          color: Colors.blue,
+                        ),
+                        label: Text("Search"),
+                        labelStyle: GoogleFonts.spaceMono(
+                            fontSize: 15, color: Colors.blue)),
+                  ))
             ],
           ),
         ),
