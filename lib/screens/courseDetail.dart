@@ -28,7 +28,7 @@ class _CoursedetailsState extends State<Coursedetails> {
                       child: InkWell(
                         child: Icon(
                           Icons.arrow_back,
-                          color: Color.fromARGB(255, 28, 39, 81),
+                          color: Color.fromARGB(255, 18, 58, 93),
                         ),
                         onTap: () {
                           Navigator.pop(context);
@@ -38,13 +38,13 @@ class _CoursedetailsState extends State<Coursedetails> {
                       style: GoogleFonts.spaceMono(
                         fontSize: 25,
                         fontWeight: FontWeight.bold,
-                        color: Color.fromARGB(255, 28, 39, 81),
+                        color: Color.fromARGB(255, 18, 58, 93),
                       )),
                   CircleAvatar(
                       backgroundColor: const Color.fromARGB(60, 214, 209, 209),
                       child: Icon(
                         CupertinoIcons.heart,
-                        color: Color.fromARGB(255, 28, 39, 81),
+                        color: Color.fromARGB(255, 18, 58, 93),
                       )),
                 ],
               ),
@@ -68,7 +68,7 @@ class _CoursedetailsState extends State<Coursedetails> {
               "UI/UX Design Course",
               style: GoogleFonts.spaceMono(
                 fontSize: 25,
-                color: Color.fromARGB(255, 28, 39, 81),
+                color: Color.fromARGB(255, 18, 58, 93),
               ),
             ),
             SizedBox(
@@ -83,7 +83,7 @@ class _CoursedetailsState extends State<Coursedetails> {
                     children: [
                       Icon(
                         CupertinoIcons.clock,
-                        color: Color.fromARGB(255, 28, 39, 81),
+                        color: Color.fromARGB(255, 18, 58, 93),
                       ),
                       SizedBox(
                         width: 6,
@@ -100,7 +100,7 @@ class _CoursedetailsState extends State<Coursedetails> {
                             "09:30AM-10:30AM",
                             style: GoogleFonts.spaceMono(
                               fontSize: 15,
-                              color: Color.fromARGB(255, 28, 39, 81),
+                              color: Color.fromARGB(255, 18, 58, 93),
                             ),
                           ),
                         ],
@@ -111,7 +111,7 @@ class _CoursedetailsState extends State<Coursedetails> {
                     children: [
                       Icon(
                         CupertinoIcons.person_2_fill,
-                        color: Color.fromARGB(255, 28, 39, 81),
+                        color: Color.fromARGB(255, 18, 58, 93),
                       ),
                       SizedBox(
                         width: 10,
@@ -128,7 +128,7 @@ class _CoursedetailsState extends State<Coursedetails> {
                             "250 Students",
                             style: GoogleFonts.spaceMono(
                               fontSize: 15,
-                              color: Color.fromARGB(255, 28, 39, 81),
+                              color: Color.fromARGB(255, 18, 58, 93),
                             ),
                           ),
                         ],
@@ -155,7 +155,9 @@ class _CoursedetailsState extends State<Coursedetails> {
                   TextSpan(
                       text: " See More",
                       style: GoogleFonts.spaceMono(
-                          fontSize: 20, color: Colors.blue))
+                        fontSize: 20,
+                        color: Color.fromARGB(255, 18, 58, 93),
+                      ))
                 ]))),
             SizedBox(
               height: 35,
@@ -178,7 +180,7 @@ class _CoursedetailsState extends State<Coursedetails> {
                         "Basic Design",
                         style: GoogleFonts.spaceMono(
                             fontSize: 18,
-                            color: Colors.blue,
+                            color: Color.fromARGB(255, 18, 58, 93),
                             fontWeight: FontWeight.bold),
                       ),
                       SizedBox(
@@ -188,7 +190,7 @@ class _CoursedetailsState extends State<Coursedetails> {
                         height: 3,
                         width: 115,
                         decoration: BoxDecoration(
-                            color: Colors.blue,
+                            color: Color.fromARGB(255, 18, 58, 93),
                             borderRadius: BorderRadius.circular(10)),
                       )
                     ],
@@ -234,7 +236,7 @@ class _CoursedetailsState extends State<Coursedetails> {
                             "Definition of Design",
                             style: GoogleFonts.spaceMono(
                                 fontSize: 16,
-                                color: Colors.blue,
+                                color: Color.fromARGB(255, 18, 58, 93),
                                 fontWeight: FontWeight.bold),
                           ),
                           SizedBox(
@@ -290,7 +292,7 @@ class _CoursedetailsState extends State<Coursedetails> {
                             "Design Principles",
                             style: GoogleFonts.spaceMono(
                                 fontSize: 16,
-                                color: Colors.blue,
+                                color: Color.fromARGB(255, 18, 58, 93),
                                 fontWeight: FontWeight.bold),
                           ),
                           SizedBox(
@@ -346,7 +348,7 @@ class _CoursedetailsState extends State<Coursedetails> {
                             "Design Manifesto",
                             style: GoogleFonts.spaceMono(
                                 fontSize: 16,
-                                color: Colors.blue,
+                                color: Color.fromARGB(255, 18, 58, 93),
                                 fontWeight: FontWeight.bold),
                           ),
                           SizedBox(
@@ -402,7 +404,7 @@ class _CoursedetailsState extends State<Coursedetails> {
                             "Design Tools",
                             style: GoogleFonts.spaceMono(
                                 fontSize: 16,
-                                color: Colors.blue,
+                                color: Color.fromARGB(255, 18, 58, 93),
                                 fontWeight: FontWeight.bold),
                           ),
                           SizedBox(
@@ -431,14 +433,14 @@ class _CoursedetailsState extends State<Coursedetails> {
         Align(
           alignment: Alignment.bottomCenter,
           child: Padding(
-            padding: const EdgeInsets.only(left: 15, right: 15, bottom: 30),
+            padding: const EdgeInsets.only(left: 20, right: 15, bottom: 30),
             child: Row(
               children: [
                 Container(
                   height: 50,
                   width: 50,
                   decoration: BoxDecoration(
-                      color: Colors.blue,
+                      color: Color.fromARGB(255, 18, 58, 93),
                       borderRadius: BorderRadius.circular(10)),
                   child: Center(
                     child: Text(
@@ -455,7 +457,7 @@ class _CoursedetailsState extends State<Coursedetails> {
                   height: 50,
                   width: 250,
                   decoration: BoxDecoration(
-                      color: Colors.blue,
+                      color: Color.fromARGB(255, 18, 58, 93),
                       borderRadius: BorderRadius.circular(10)),
                   child: Center(
                     child: Row(
