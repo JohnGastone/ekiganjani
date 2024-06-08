@@ -57,7 +57,7 @@ class _ChatScreenState extends State<ChatScreen> {
                             fontSize: 15, color: Colors.blue)),
                   )),
               SizedBox(
-                height: 10,
+                height: 20,
               ),
               Padding(
                 padding: EdgeInsets.only(top: 20, left: 20),
