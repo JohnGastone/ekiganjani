@@ -61,75 +61,79 @@ class _ChatScreenState extends State<ChatScreen> {
               ),
               Padding(
                 padding: EdgeInsets.only(left: 15, right: 15, top: 20),
-                child: Row(
-                  children: [
-                    SizedBox(
-                      height: 50,
-                      width: 50,
-                      child: CircleAvatar(
-                          child: ClipOval(
-                        child: Image.asset(
-                          "./images/image.png",
-                          fit: BoxFit.cover,
-                          width: double.infinity,
-                          height: double.infinity,
-                        ),
-                      )),
-                    ),
-                    SizedBox(
-                      width: 8,
-                    ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          "Kathleen Lugendo",
-                          style: GoogleFonts.spaceMono(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.blue),
-                        ),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        Text(
-                          "Hello, I just enrolled...",
-                          style: GoogleFonts.spaceMono(
-                              fontSize: 13, color: Colors.grey),
-                        )
-                      ],
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
-                        Text(
-                          "8:30 PM",
-                          style: GoogleFonts.spaceMono(
-                              fontSize: 13,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.grey),
-                        ),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        SizedBox(
-                          height: 20,
-                          width: 20,
-                          child: CircleAvatar(
-                            backgroundColor: Colors.blue,
-                            child: Text(
-                              "3",
-                              style: GoogleFonts.spaceMono(
-                                  fontSize: 12, color: Colors.white),
-                            ),
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: displayChats.length,
+                  itemBuilder: (context, index) => Row(
+                    children: [
+                      SizedBox(
+                        height: 50,
+                        width: 50,
+                        child: CircleAvatar(
+                            child: ClipOval(
+                          child: Image.asset(
+                            "./images/image.png",
+                            fit: BoxFit.cover,
+                            width: double.infinity,
+                            height: double.infinity,
                           ),
-                        )
-                      ],
-                    ),
-                  ],
+                        )),
+                      ),
+                      SizedBox(
+                        width: 8,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Kathleen Lugendo",
+                            style: GoogleFonts.spaceMono(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.blue),
+                          ),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          Text(
+                            "Hello, I just enrolled...",
+                            style: GoogleFonts.spaceMono(
+                                fontSize: 13, color: Colors.grey),
+                          )
+                        ],
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          Text(
+                            "8:30 PM",
+                            style: GoogleFonts.spaceMono(
+                                fontSize: 13,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.grey),
+                          ),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          SizedBox(
+                            height: 20,
+                            width: 20,
+                            child: CircleAvatar(
+                              backgroundColor: Colors.blue,
+                              child: Text(
+                                "3",
+                                style: GoogleFonts.spaceMono(
+                                    fontSize: 12, color: Colors.white),
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               )
             ],
