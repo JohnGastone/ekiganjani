@@ -37,7 +37,7 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
                 "Our Courses",
                 style: GoogleFonts.spaceMono(
                     fontSize: 24,
-                    color: Colors.blue,
+                    color: Color.fromARGB(255, 18, 58, 93),
                     fontWeight: FontWeight.bold),
               ),
               CircleAvatar(
@@ -67,7 +67,7 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
                         width: 150,
                         height: 50,
                         decoration: BoxDecoration(
-                            color: Colors.blue,
+                            color: Color.fromARGB(255, 18, 58, 93),
                             borderRadius: BorderRadius.circular(12)),
                         child: Center(
                           child: Text(
@@ -130,9 +130,10 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
                                 Text(
                                   "UI/UX Design",
                                   style: GoogleFonts.spaceMono(
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue),
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    color: Color.fromARGB(255, 18, 58, 93),
+                                  ),
                                 ),
                                 Row(
                                   children: [
@@ -187,7 +188,8 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
                                         width: 143,
                                         height: 10,
                                         decoration: BoxDecoration(
-                                            color: Colors.blue,
+                                            color:
+                                                Color.fromARGB(255, 18, 58, 93),
                                             borderRadius:
                                                 BorderRadius.circular(12)),
                                       ),
