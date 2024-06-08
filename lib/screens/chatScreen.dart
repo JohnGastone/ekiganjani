@@ -62,8 +62,8 @@ class _ChatScreenState extends State<ChatScreen> {
                 child: Row(
                   children: [
                     SizedBox(
-                      height: 60,
-                      width: 60,
+                      height: 50,
+                      width: 50,
                       child: CircleAvatar(
                           child: ClipOval(
                         child: Image.asset(
@@ -73,6 +73,52 @@ class _ChatScreenState extends State<ChatScreen> {
                           height: double.infinity,
                         ),
                       )),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Kathleen Lugendo",
+                          style: GoogleFonts.spaceMono(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.blue),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          "Hello, I just enrolled...",
+                          style: GoogleFonts.spaceMono(
+                              fontSize: 13, color: Colors.grey),
+                        )
+                      ],
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "8:30 PM",
+                          style: GoogleFonts.spaceMono(
+                              fontSize: 13,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.blue),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        CircleAvatar(
+                          backgroundColor: Colors.blue,
+                          child: Text(
+                            "3",
+                            style: GoogleFonts.spaceMono(
+                                fontSize: 12, color: Colors.white),
+                          ),
+                        )
+                      ],
                     ),
                   ],
                 ),
