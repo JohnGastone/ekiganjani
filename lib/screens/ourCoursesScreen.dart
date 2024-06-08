@@ -103,6 +103,8 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
                 height: 10,
               ),
               ListView.builder(
+                shrinkWrap: true,
+                scrollDirection: Axis.vertical,
                 itemCount: getCourses.length,
                 itemBuilder: (context, index) => Padding(
                   padding: const EdgeInsets.only(left: 15, right: 15, top: 20),
