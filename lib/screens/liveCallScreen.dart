@@ -21,7 +21,7 @@ class _LiveCallScreenState extends State<LiveCallScreen> {
           height: MediaQuery.of(context).size.height,
           decoration: BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage("./images/image.png"), fit: BoxFit.cover)),
+                  image: AssetImage("./images/p1.png"), fit: BoxFit.cover)),
           child: Center(
             child: Column(
               children: [
@@ -43,7 +43,7 @@ class _LiveCallScreenState extends State<LiveCallScreen> {
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(12),
                             image: DecorationImage(
-                                image: AssetImage("./images/image.png"),
+                                image: AssetImage("./images/p2.png"),
                                 fit: BoxFit.cover)),
                         child: Align(
                           alignment: Alignment.topRight,
