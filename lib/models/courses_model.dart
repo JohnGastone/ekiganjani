@@ -7,3 +7,7 @@ class CoursesModel {
   CoursesModel(
       this.courseName, this.courseInstructor, this.courseVideos, this.progress);
 }
+
+class CourseList {
+  static List<CoursesModel> getAllCourses = [];
+}
