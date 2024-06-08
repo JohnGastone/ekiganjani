@@ -34,12 +34,14 @@ class _MyHomePageState extends State<MyHomePage> {
             Row(
               children: [
                 CircleAvatar(
-                  backgroundColor: Color.fromARGB(255, 18, 58, 93),
-                  child: Icon(
-                    CupertinoIcons.person,
-                    color: Colors.white,
-                  ),
-                ),
+                    backgroundColor: Color.fromARGB(255, 18, 58, 93),
+                    child: ClipOval(
+                        child: Image.asset(
+                      "./images/image.png",
+                      fit: BoxFit.cover,
+                      height: double.infinity,
+                      width: double.infinity,
+                    ))),
                 SizedBox(
                   width: 10,
                 ),
