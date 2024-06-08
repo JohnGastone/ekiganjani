@@ -5,17 +5,13 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:animated_notch_bottom_bar/animated_notch_bottom_bar/animated_notch_bottom_bar.dart';
 
+import 'chatScreen.dart';
+import 'ourCoursesScreen.dart';
+
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
+  final NotchBottomBarController? controller;
 
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
+  const MyHomePage({super.key, this.controller});
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
@@ -39,7 +35,16 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final List<Widget> bottomBarPages = [
+      MyHomePage(
+        controller: (_controller),
+      ),
+      const ChatScreen(),
+      const OurCoursesScreen(),
+    ];
     return Scaffold(
+      // controller: _pageController,
+
       backgroundColor: Color.fromARGB(255, 28, 39, 81),
       appBar: AppBar(
         automaticallyImplyLeading: false,
@@ -103,6 +108,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       GoogleFonts.spaceMono(fontSize: 20, color: Colors.white),
                   decoration: InputDecoration(
                       border: InputBorder.none,
+                      enabledBorder: InputBorder.none,
+                      focusedBorder: InputBorder.none,
                       prefixIcon:
                           Icon(CupertinoIcons.search, color: Colors.white),
                       suffixIcon: Icon(
