@@ -74,6 +74,9 @@ class _ChatScreenState extends State<ChatScreen> {
                         ),
                       )),
                     ),
+                    SizedBox(
+                      width: 8,
+                    ),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -98,24 +101,28 @@ class _ChatScreenState extends State<ChatScreen> {
                       width: 10,
                     ),
                     Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         Text(
                           "8:30 PM",
                           style: GoogleFonts.spaceMono(
                               fontSize: 13,
                               fontWeight: FontWeight.bold,
-                              color: Colors.blue),
+                              color: Colors.grey),
                         ),
                         SizedBox(
                           height: 10,
                         ),
-                        CircleAvatar(
-                          backgroundColor: Colors.blue,
-                          child: Text(
-                            "3",
-                            style: GoogleFonts.spaceMono(
-                                fontSize: 12, color: Colors.white),
+                        SizedBox(
+                          height: 20,
+                          width: 20,
+                          child: CircleAvatar(
+                            backgroundColor: Colors.blue,
+                            child: Text(
+                              "3",
+                              style: GoogleFonts.spaceMono(
+                                  fontSize: 12, color: Colors.white),
+                            ),
                           ),
                         )
                       ],
