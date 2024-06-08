@@ -30,12 +30,15 @@ class _LiveCallScreenState extends State<LiveCallScreen> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      CircleAvatar(
-                        backgroundColor: Colors.white24,
-                        child: Icon(
-                          CupertinoIcons.back,
-                          color: Colors.white,
+                      InkWell(
+                        child: CircleAvatar(
+                          backgroundColor: Colors.white24,
+                          child: Icon(
+                            CupertinoIcons.back,
+                            color: Colors.white,
+                          ),
                         ),
+                        onTap: () => Navigator.pop(context),
                       ),
                       Container(
                         height: 90,
