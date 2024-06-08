@@ -24,9 +24,15 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               CircleAvatar(
-                backgroundColor: Colors.white24,
-                child: Icon(CupertinoIcons.person),
-              ),
+                  backgroundColor: Colors.white24,
+                  child: ClipOval(
+                    child: Image.asset(
+                      "./images/image.png",
+                      fit: BoxFit.cover,
+                      height: double.infinity,
+                      width: double.infinity,
+                    ),
+                  )),
               Text(
                 "Our Courses",
                 style: GoogleFonts.spaceMono(
