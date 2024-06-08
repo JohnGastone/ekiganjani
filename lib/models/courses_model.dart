@@ -34,6 +34,12 @@ class CourseList {
       "10/30 Videos",
       "33%",
     ),
+    CoursesModel(
+      "CRM Management",
+      "John Lugendo",
+      "10/30 Videos",
+      "33%",
+    ),
   ];
 
   static List<CoursesModel> displayCourses = List.from(getAllCourses);
