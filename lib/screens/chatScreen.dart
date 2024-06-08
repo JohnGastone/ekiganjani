@@ -36,7 +36,12 @@ class _ChatScreenState extends State<ChatScreen> {
       body: Center(
         child: SingleChildScrollView(
           child: Column(
-            children: [],
+            children: [
+              Container(
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                      color: Colors.lightBlue))
+            ],
           ),
         ),
       ),
