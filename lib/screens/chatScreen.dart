@@ -29,7 +29,10 @@ class _ChatScreenState extends State<ChatScreen> {
               ),
               Text(
                 "Chats",
-                style: GoogleFonts.spaceMono(fontSize: 30, color: Colors.blue),
+                style: GoogleFonts.spaceMono(
+                  fontSize: 30,
+                  color: Color.fromARGB(255, 18, 58, 93),
+                ),
               )
             ],
           ),
@@ -50,11 +53,13 @@ class _ChatScreenState extends State<ChatScreen> {
                         border: InputBorder.none,
                         prefixIcon: Icon(
                           CupertinoIcons.search,
-                          color: Colors.blue,
+                          color: Color.fromARGB(255, 18, 58, 93),
                         ),
                         label: Text("Search"),
                         labelStyle: GoogleFonts.spaceMono(
-                            fontSize: 15, color: Colors.blue)),
+                          fontSize: 15,
+                          color: Color.fromARGB(255, 18, 58, 93),
+                        )),
                   )),
               SizedBox(
                 height: 20,
@@ -93,9 +98,10 @@ class _ChatScreenState extends State<ChatScreen> {
                               Text(
                                 displayChats[index].name!,
                                 style: GoogleFonts.spaceMono(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.blue),
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold,
+                                  color: Color.fromARGB(255, 18, 58, 93),
+                                ),
                               ),
                               SizedBox(
                                 height: 10,
@@ -127,7 +133,8 @@ class _ChatScreenState extends State<ChatScreen> {
                                 height: 20,
                                 width: 20,
                                 child: CircleAvatar(
-                                  backgroundColor: Colors.blue,
+                                  backgroundColor:
+                                      Color.fromARGB(255, 18, 58, 93),
                                   child: Text(
                                     "${displayChats[index].unreadCount}",
                                     style: GoogleFonts.spaceMono(
