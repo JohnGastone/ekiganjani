@@ -53,7 +53,11 @@ class _ChatScreenState extends State<ChatScreen> {
                         label: Text("Search"),
                         labelStyle: GoogleFonts.spaceMono(
                             fontSize: 15, color: Colors.blue)),
-                  ))
+                  )),
+              SizedBox(
+                height: 10,
+              ),
+              Padding(padding: EdgeInsets.only(left: 15, right: 15, top: 20))
             ],
           ),
         ),
