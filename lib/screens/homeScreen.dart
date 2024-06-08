@@ -252,7 +252,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                           ),
                           SizedBox(
-                            height: 10,
+                            height: 5,
                           ),
                           Padding(
                             padding: const EdgeInsets.only(right: 50),
@@ -307,7 +307,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                           ),
                           SizedBox(
-                            height: 10,
+                            height: 5,
                           ),
                           Padding(
                             padding: const EdgeInsets.only(right: 50),
