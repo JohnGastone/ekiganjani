@@ -15,6 +15,7 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         automaticallyImplyLeading: false,
         title: Padding(
@@ -42,7 +43,7 @@ class _ChatScreenState extends State<ChatScreen> {
                   width: 300,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
-                      color: Colors.lightBlue),
+                      color: Color.fromARGB(60, 136, 150, 171)),
                   child: TextField(
                     decoration: InputDecoration(
                         border: InputBorder.none,
