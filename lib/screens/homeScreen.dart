@@ -22,6 +22,21 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  final _pageController = PageController(initialPage: 0);
+
+  /// Controller to handle bottom nav bar and also handles initial page
+  final NotchBottomBarController _controller =
+      NotchBottomBarController(index: 0);
+
+  int maxCount = 5;
+
+  @override
+  void dispose() {
+    _pageController.dispose();
+
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
