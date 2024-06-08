@@ -110,7 +110,7 @@ class _LandingscreenState extends State<Landingscreen> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => ChatScreen()));
+                                    builder: (context) => LiveCallScreen()));
                           },
                           child: Text(
                             "Get Started",
