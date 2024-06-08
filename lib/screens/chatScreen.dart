@@ -57,7 +57,22 @@ class _ChatScreenState extends State<ChatScreen> {
               SizedBox(
                 height: 10,
               ),
-              Padding(padding: EdgeInsets.only(left: 15, right: 15, top: 20))
+              Padding(
+                padding: EdgeInsets.only(left: 15, right: 15, top: 20),
+                child: Row(
+                  children: [
+                    CircleAvatar(
+                        child: ClipOval(
+                      child: Image.asset(
+                        "./images/image.png",
+                        fit: BoxFit.cover,
+                        width: double.infinity,
+                        height: double.infinity,
+                      ),
+                    )),
+                  ],
+                ),
+              )
             ],
           ),
         ),
