@@ -102,115 +102,118 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
               SizedBox(
                 height: 10,
               ),
-              Padding(
-                padding: const EdgeInsets.only(left: 15, right: 15, top: 20),
-                child: Padding(
-                  padding: const EdgeInsets.only(
-                      left: 10, right: 10, top: 10, bottom: 10),
-                  child: SizedBox(
-                    width: 350,
-                    height: 123,
-                    child: Card(
-                      color: Colors.white24,
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Row(
-                          children: [
-                            Container(
-                              height: 80,
-                              width: 80,
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(12),
-                                  image: DecorationImage(
-                                      image: AssetImage("./images/image.png"),
-                                      fit: BoxFit.cover)),
-                            ),
-                            SizedBox(
-                              width: 10,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  "UI/UX Design",
-                                  style: GoogleFonts.spaceMono(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold,
-                                    color: Color.fromARGB(255, 18, 58, 93),
+              ListView.builder(
+                itemCount: getCourses.length,
+                itemBuilder: (context, index) => Padding(
+                  padding: const EdgeInsets.only(left: 15, right: 15, top: 20),
+                  child: Padding(
+                    padding: const EdgeInsets.only(
+                        left: 10, right: 10, top: 10, bottom: 10),
+                    child: SizedBox(
+                      width: 350,
+                      height: 123,
+                      child: Card(
+                        color: Colors.white24,
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Row(
+                            children: [
+                              Container(
+                                height: 80,
+                                width: 80,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(12),
+                                    image: DecorationImage(
+                                        image: AssetImage("./images/image.png"),
+                                        fit: BoxFit.cover)),
+                              ),
+                              SizedBox(
+                                width: 10,
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    getCourses[index].courseName!,
+                                    style: GoogleFonts.spaceMono(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold,
+                                      color: Color.fromARGB(255, 18, 58, 93),
+                                    ),
                                   ),
-                                ),
-                                Row(
-                                  children: [
-                                    Icon(
-                                      CupertinoIcons.person,
-                                      color: Colors.grey,
-                                    ),
-                                    SizedBox(
-                                      width: 8,
-                                    ),
-                                    Text(
-                                      "Omary Mkuse",
-                                      style: GoogleFonts.spaceMono(
-                                          fontSize: 16, color: Colors.grey),
-                                    )
-                                  ],
-                                ),
-                                SizedBox(
-                                  height: 10,
-                                ),
-                                Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
+                                  Row(
                                     children: [
-                                      Text(
-                                        "12/15 Videos",
-                                        style: GoogleFonts.spaceMono(
-                                            fontSize: 16, color: Colors.grey),
+                                      Icon(
+                                        CupertinoIcons.person,
+                                        color: Colors.grey,
                                       ),
                                       SizedBox(
-                                        width: 40,
+                                        width: 8,
                                       ),
                                       Text(
-                                        "75%",
+                                        getCourses[index].courseInstructor!,
                                         style: GoogleFonts.spaceMono(
                                             fontSize: 16, color: Colors.grey),
                                       )
-                                    ]),
-                                SizedBox(
-                                  height: 10,
-                                ),
-                                Container(
-                                  height: 10,
-                                  width: 190,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(12),
-                                    color: Colors.white24,
-                                  ),
-                                  child: Row(
-                                    children: [
-                                      Container(
-                                        width: 143,
-                                        height: 10,
-                                        decoration: BoxDecoration(
-                                            color:
-                                                Color.fromARGB(255, 18, 58, 93),
-                                            borderRadius:
-                                                BorderRadius.circular(12)),
-                                      ),
-                                      Container(
-                                        width: 47,
-                                        height: 10,
-                                        decoration: BoxDecoration(
-                                            color: Colors.white24,
-                                            borderRadius:
-                                                BorderRadius.circular(12)),
-                                      ),
                                     ],
                                   ),
-                                )
-                              ],
-                            )
-                          ],
+                                  SizedBox(
+                                    height: 10,
+                                  ),
+                                  Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Text(
+                                          getCourses[index].courseVideos!,
+                                          style: GoogleFonts.spaceMono(
+                                              fontSize: 16, color: Colors.grey),
+                                        ),
+                                        SizedBox(
+                                          width: 40,
+                                        ),
+                                        Text(
+                                          getCourses[index].progress!,
+                                          style: GoogleFonts.spaceMono(
+                                              fontSize: 16, color: Colors.grey),
+                                        )
+                                      ]),
+                                  SizedBox(
+                                    height: 10,
+                                  ),
+                                  Container(
+                                    height: 10,
+                                    width: 190,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(12),
+                                      color: Colors.white24,
+                                    ),
+                                    child: Row(
+                                      children: [
+                                        Container(
+                                          width: 143,
+                                          height: 10,
+                                          decoration: BoxDecoration(
+                                              color: Color.fromARGB(
+                                                  255, 18, 58, 93),
+                                              borderRadius:
+                                                  BorderRadius.circular(12)),
+                                        ),
+                                        Container(
+                                          width: 47,
+                                          height: 10,
+                                          decoration: BoxDecoration(
+                                              color: Colors.white24,
+                                              borderRadius:
+                                                  BorderRadius.circular(12)),
+                                        ),
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     ),
