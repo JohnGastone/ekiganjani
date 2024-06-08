@@ -59,17 +59,16 @@ class _ChatScreenState extends State<ChatScreen> {
               SizedBox(
                 height: 10,
               ),
-              SizedBox(
-                height: 500,
-                // width: 250,
-                child: Padding(
-                  padding: EdgeInsets.only(top: 20),
-                  child: ListView.builder(
-                    shrinkWrap: true,
-                    scrollDirection: Axis.vertical,
-                    itemCount: displayChats.length,
-                    itemBuilder: (context, index) => Padding(
-                      padding: const EdgeInsets.only(bottom: 20),
+              Padding(
+                padding: EdgeInsets.only(top: 20, left: 20),
+                child: ListView.builder(
+                  shrinkWrap: true,
+                  scrollDirection: Axis.vertical,
+                  itemCount: displayChats.length,
+                  itemBuilder: (context, index) => Padding(
+                    padding: const EdgeInsets.only(bottom: 20),
+                    child: SizedBox(
+                      width: 240,
                       child: Row(
                         children: [
                           SizedBox(
@@ -109,7 +108,7 @@ class _ChatScreenState extends State<ChatScreen> {
                             ],
                           ),
                           SizedBox(
-                            width: 10,
+                            width: 40,
                           ),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.end,
@@ -143,7 +142,7 @@ class _ChatScreenState extends State<ChatScreen> {
                     ),
                   ),
                 ),
-              )
+              ),
             ],
           ),
         ),
