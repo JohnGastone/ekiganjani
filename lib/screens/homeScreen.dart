@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:ekiganjani/models/courses_model.dart';
 import 'package:ekiganjani/screens/courseDetail.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -34,6 +35,9 @@ class _MyHomePageState extends State<MyHomePage> {
     super.dispose();
   }
 
+  List<TrendingCoursesModel> getTrendingCourses =
+      List.from(TrendingCourseList.displayTrendingCourses);
+
   @override
   Widget build(BuildContext context) {
     final List<Widget> bottomBarPages = [
@@ -44,8 +48,6 @@ class _MyHomePageState extends State<MyHomePage> {
       const OurCoursesScreen(),
     ];
     return Scaffold(
-      // controller: _pageController,
-
       backgroundColor: Color.fromARGB(255, 28, 39, 81),
       appBar: AppBar(
         automaticallyImplyLeading: false,
