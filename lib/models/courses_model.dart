@@ -62,4 +62,7 @@ class TrendingCourseList {
     TrendingCoursesModel("Networking", "20 Lectures"),
     TrendingCoursesModel("Databases", "25 Lectures")
   ];
+
+  static List<TrendingCoursesModel> getAllTrendingCourses =
+      List.from(displayTrendingCourses);
 }
