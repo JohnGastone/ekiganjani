@@ -249,10 +249,10 @@ class _MyHomePageState extends State<MyHomePage> {
                     itemBuilder: (context, index) => InkWell(
                           child: Padding(
                             padding:
-                                EdgeInsets.only(left: 15, right: 15, top: 15),
+                                EdgeInsets.only(left: 10, right: 10, top: 10),
                             child: InkWell(
                                 child: Container(
-                                  height: 250,
+                                  height: 290,
                                   width: 150,
                                   decoration: BoxDecoration(
                                       color: Colors.white24,
@@ -260,7 +260,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   child: Column(
                                     children: [
                                       Container(
-                                        height: 140,
+                                        height: 100,
                                         width: 150,
                                         decoration: BoxDecoration(
                                             borderRadius: BorderRadius.only(
