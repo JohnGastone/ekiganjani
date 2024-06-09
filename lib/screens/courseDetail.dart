@@ -428,6 +428,9 @@ class _CoursedetailsState extends State<Coursedetails> {
                     ],
                   ),
                 )),
+            SizedBox(
+              height: 50,
+            )
           ]),
         ),
         Align(
