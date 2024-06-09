@@ -81,4 +81,7 @@ class CourseModulesList {
     CourseModulesModel("Design Manifesto", "#:00 Minutes"),
     CourseModulesModel("Design Tools", "3:30 Minutes"),
   ];
+
+  static List<CourseModulesModel> getAllCourseModules =
+      List.from(displayCourseModules);
 }
