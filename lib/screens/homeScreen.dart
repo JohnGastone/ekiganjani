@@ -240,8 +240,13 @@ class _MyHomePageState extends State<MyHomePage> {
               Row(
                 children: [
                   GridView.builder(
+                      physics: NeverScrollableScrollPhysics(),
+                      shrinkWrap: true,
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 2, mainAxisSpacing: 20),
+                          crossAxisCount: 2,
+                          mainAxisSpacing: 20,
+                          crossAxisSpacing: 10),
+                      itemCount: getTrendingCourses.length,
                       itemBuilder: (context, index) => InkWell(
                             child: Padding(
                               padding:
@@ -275,7 +280,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                                 MainAxisAlignment.spaceBetween,
                                             children: [
                                               Text(
-                                                "UI/UX Design",
+                                                getTrendingCourses[index]
+                                                    .courseName!,
                                                 style: GoogleFonts.spaceMono(
                                                     color: Colors.white,
                                                     fontSize: 15,
@@ -297,7 +303,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                           padding:
                                               const EdgeInsets.only(right: 50),
                                           child: Text(
-                                            "20 Lectures",
+                                            getTrendingCourses[index]
+                                                .courseLectures!,
                                             style: GoogleFonts.spaceMono(
                                                 fontSize: 15,
                                                 color: Colors.grey),
