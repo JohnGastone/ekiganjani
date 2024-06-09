@@ -56,7 +56,7 @@ class TrendingCourseList {
   static List<TrendingCoursesModel> displayTrendingCourses = [
     TrendingCoursesModel("UI/UX Design", "20 Lectures"),
     TrendingCoursesModel("Motion Graphics", "15 Lectures"),
-    TrendingCoursesModel("Software Testing", "15 Lectures"),
+    TrendingCoursesModel("User Testing", "15 Lectures"),
     TrendingCoursesModel("System Analysis", "20 Lectures"),
     TrendingCoursesModel("HCI", "10 Lectures"),
     TrendingCoursesModel("Networking", "20 Lectures"),
