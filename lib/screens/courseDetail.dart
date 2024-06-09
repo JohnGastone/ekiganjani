@@ -4,6 +4,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../models/courses_model.dart';
+
 class Coursedetails extends StatefulWidget {
   const Coursedetails({super.key});
 
@@ -12,6 +14,9 @@ class Coursedetails extends StatefulWidget {
 }
 
 class _CoursedetailsState extends State<Coursedetails> {
+  List<CourseModulesModel> getModules =
+      List.from(CourseModulesList.displayCourseModules);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -207,227 +212,72 @@ class _CoursedetailsState extends State<Coursedetails> {
             SizedBox(
               height: 20,
             ),
-            Card(
-                color: Colors.white24,
-                elevation: 5,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15),
-                ),
-                child: Padding(
-                  padding: EdgeInsets.all(15),
-                  child: Row(
-                    children: [
-                      Container(
-                        height: 80,
-                        width: 80,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            image: DecorationImage(
-                                image: AssetImage("./images/image.png"),
-                                fit: BoxFit.cover)),
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Definition of Design",
-                            style: GoogleFonts.spaceMono(
-                                fontSize: 16,
-                                color: Color.fromARGB(255, 18, 58, 93),
-                                fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: 15,
-                          ),
-                          Text(
-                            "2:30 minutes",
-                            style: GoogleFonts.spaceMono(
-                                fontSize: 16,
-                                color: Colors.grey,
-                                fontWeight: FontWeight.w400),
-                          )
-                        ],
-                      ),
-                      Spacer(),
-                      Image.asset(
-                        ("./images/progress.png"),
-                        height: 50,
-                        width: 50,
-                      )
-                    ],
-                  ),
-                )),
             SizedBox(
-              height: 20,
+              child: GridView.builder(
+                  physics: NeverScrollableScrollPhysics(),
+                  shrinkWrap: true,
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 1, mainAxisSpacing: 20),
+                  itemCount: getModules.length,
+                  itemBuilder: (context, index) => InkWell(
+                        child: Card(
+                            color: Colors.white24,
+                            elevation: 5,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(15),
+                            ),
+                            child: Padding(
+                              padding: EdgeInsets.all(15),
+                              child: Row(
+                                children: [
+                                  Container(
+                                    height: 80,
+                                    width: 80,
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(10),
+                                        image: DecorationImage(
+                                            image: AssetImage(
+                                                "./images/image.png"),
+                                            fit: BoxFit.cover)),
+                                  ),
+                                  SizedBox(
+                                    width: 10,
+                                  ),
+                                  Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        getModules[index].moduleName!,
+                                        style: GoogleFonts.spaceMono(
+                                            fontSize: 16,
+                                            color:
+                                                Color.fromARGB(255, 18, 58, 93),
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                      SizedBox(
+                                        height: 15,
+                                      ),
+                                      Text(
+                                        getModules[index].moduleDuration!,
+                                        style: GoogleFonts.spaceMono(
+                                            fontSize: 16,
+                                            color: Colors.grey,
+                                            fontWeight: FontWeight.w400),
+                                      )
+                                    ],
+                                  ),
+                                  Spacer(),
+                                  Image.asset(
+                                    ("./images/progress.png"),
+                                    height: 50,
+                                    width: 50,
+                                  )
+                                ],
+                              ),
+                            )),
+                      )),
             ),
-            Card(
-                color: Colors.white24,
-                elevation: 5,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15),
-                ),
-                child: Padding(
-                  padding: EdgeInsets.all(15),
-                  child: Row(
-                    children: [
-                      Container(
-                        height: 80,
-                        width: 80,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            image: DecorationImage(
-                                image: AssetImage("./images/image.png"),
-                                fit: BoxFit.cover)),
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Design Principles",
-                            style: GoogleFonts.spaceMono(
-                                fontSize: 16,
-                                color: Color.fromARGB(255, 18, 58, 93),
-                                fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: 15,
-                          ),
-                          Text(
-                            "4:30 minutes",
-                            style: GoogleFonts.spaceMono(
-                                fontSize: 16,
-                                color: Colors.grey,
-                                fontWeight: FontWeight.w400),
-                          )
-                        ],
-                      ),
-                      Spacer(),
-                      Image.asset(
-                        ("./images/progress.png"),
-                        height: 50,
-                        width: 50,
-                      )
-                    ],
-                  ),
-                )),
-            SizedBox(
-              height: 20,
-            ),
-            Card(
-                color: Colors.white24,
-                elevation: 5,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15),
-                ),
-                child: Padding(
-                  padding: EdgeInsets.all(15),
-                  child: Row(
-                    children: [
-                      Container(
-                        height: 80,
-                        width: 80,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            image: DecorationImage(
-                                image: AssetImage("./images/image.png"),
-                                fit: BoxFit.cover)),
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Design Manifesto",
-                            style: GoogleFonts.spaceMono(
-                                fontSize: 16,
-                                color: Color.fromARGB(255, 18, 58, 93),
-                                fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: 15,
-                          ),
-                          Text(
-                            "3:00 minutes",
-                            style: GoogleFonts.spaceMono(
-                                fontSize: 16,
-                                color: Colors.grey,
-                                fontWeight: FontWeight.w400),
-                          )
-                        ],
-                      ),
-                      Spacer(),
-                      Image.asset(
-                        ("./images/progress.png"),
-                        height: 50,
-                        width: 50,
-                      )
-                    ],
-                  ),
-                )),
-            SizedBox(
-              height: 20,
-            ),
-            Card(
-                color: Colors.white24,
-                elevation: 5,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15),
-                ),
-                child: Padding(
-                  padding: EdgeInsets.all(15),
-                  child: Row(
-                    children: [
-                      Container(
-                        height: 80,
-                        width: 80,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            image: DecorationImage(
-                                image: AssetImage("./images/image.png"),
-                                fit: BoxFit.cover)),
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Design Tools",
-                            style: GoogleFonts.spaceMono(
-                                fontSize: 16,
-                                color: Color.fromARGB(255, 18, 58, 93),
-                                fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: 15,
-                          ),
-                          Text(
-                            "3:30 minutes",
-                            style: GoogleFonts.spaceMono(
-                                fontSize: 16,
-                                color: Colors.grey,
-                                fontWeight: FontWeight.w400),
-                          )
-                        ],
-                      ),
-                      Spacer(),
-                      Image.asset(
-                        ("./images/progress.png"),
-                        height: 50,
-                        width: 50,
-                      )
-                    ],
-                  ),
-                )),
             SizedBox(
               height: 50,
             )
