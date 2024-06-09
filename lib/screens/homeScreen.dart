@@ -107,18 +107,18 @@ class _MyHomePageState extends State<MyHomePage> {
                   style:
                       GoogleFonts.spaceMono(fontSize: 20, color: Colors.white),
                   decoration: InputDecoration(
-                      border: InputBorder.none,
-                      enabledBorder: InputBorder.none,
-                      focusedBorder: InputBorder.none,
-                      prefixIcon:
-                          Icon(CupertinoIcons.search, color: Colors.white),
-                      suffixIcon: Icon(
-                        CupertinoIcons.mic,
-                        color: Colors.white,
-                      ),
-                      labelText: "Search course",
-                      labelStyle: GoogleFonts.spaceMono(
-                          fontSize: 17, color: Colors.white)),
+                    border: InputBorder.none,
+                    enabledBorder: InputBorder.none,
+                    focusedBorder: InputBorder.none,
+                    fillColor: Colors.transparent, // Add this line
+                    filled: true, // Add this line
+                    prefixIcon:
+                        Icon(CupertinoIcons.search, color: Colors.white),
+                    suffixIcon: Icon(CupertinoIcons.mic, color: Colors.white),
+                    labelText: "Search course",
+                    labelStyle: GoogleFonts.spaceMono(
+                        fontSize: 17, color: Colors.white),
+                  ),
                 ),
               ),
               SizedBox(
