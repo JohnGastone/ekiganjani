@@ -73,3 +73,12 @@ class CourseModulesModel {
 
   CourseModulesModel(this.moduleName, this.moduleDuration);
 }
+
+class CourseModulesList {
+  static List<CourseModulesModel> displayCourseModules = [
+    CourseModulesModel("Definition of Design", "2:30 Minutes"),
+    CourseModulesModel("Design Principles", "4:30 Minutes"),
+    CourseModulesModel("Design Manifesto", "#:00 Minutes"),
+    CourseModulesModel("Design Tools", "3:30 Minutes"),
+  ];
+}
