@@ -66,3 +66,10 @@ class TrendingCourseList {
   static List<TrendingCoursesModel> getAllTrendingCourses =
       List.from(displayTrendingCourses);
 }
+
+class CourseModulesModel {
+  String? moduleName;
+  String? moduleDuration;
+
+  CourseModulesModel(this.moduleName, this.moduleDuration);
+}
