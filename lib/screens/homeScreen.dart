@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:ekiganjani/screens/courseDetail.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -238,58 +239,67 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   Padding(
                     padding: EdgeInsets.only(left: 15, right: 15, top: 15),
-                    child: Container(
-                      height: 210,
-                      width: 150,
-                      decoration: BoxDecoration(
-                          color: Colors.white24,
-                          borderRadius: BorderRadius.circular(20)),
-                      child: Column(
-                        children: [
-                          Container(
-                            height: 140,
-                            width: 150,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.only(
-                                    topRight: Radius.circular(20),
-                                    topLeft: Radius.circular(20)),
-                                image: DecorationImage(
-                                    fit: BoxFit.cover,
-                                    image: AssetImage("./images/image.png"))),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(5.0),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  "UI/UX Design",
-                                  style: GoogleFonts.spaceMono(
-                                      color: Colors.white,
-                                      fontSize: 15,
-                                      fontWeight: FontWeight.bold),
+                    child: InkWell(
+                        child: Container(
+                          height: 210,
+                          width: 150,
+                          decoration: BoxDecoration(
+                              color: Colors.white24,
+                              borderRadius: BorderRadius.circular(20)),
+                          child: Column(
+                            children: [
+                              Container(
+                                height: 140,
+                                width: 150,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.only(
+                                        topRight: Radius.circular(20),
+                                        topLeft: Radius.circular(20)),
+                                    image: DecorationImage(
+                                        fit: BoxFit.cover,
+                                        image:
+                                            AssetImage("./images/image.png"))),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(5.0),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      "UI/UX Design",
+                                      style: GoogleFonts.spaceMono(
+                                          color: Colors.white,
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                    Icon(
+                                      CupertinoIcons.heart_fill,
+                                      color: Color.fromARGB(255, 18, 58, 93),
+                                    )
+                                  ],
                                 ),
-                                Icon(
-                                  CupertinoIcons.heart_fill,
-                                  color: Color.fromARGB(255, 18, 58, 93),
-                                )
-                              ],
-                            ),
+                              ),
+                              SizedBox(
+                                height: 5,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(right: 50),
+                                child: Text(
+                                  "20 Lectures",
+                                  style: GoogleFonts.spaceMono(
+                                      fontSize: 15, color: Colors.grey),
+                                ),
+                              )
+                            ],
                           ),
-                          SizedBox(
-                            height: 5,
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(right: 50),
-                            child: Text(
-                              "20 Lectures",
-                              style: GoogleFonts.spaceMono(
-                                  fontSize: 15, color: Colors.grey),
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
+                        ),
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Coursedetails()));
+                        }),
                   ),
                   Padding(
                     padding: EdgeInsets.only(left: 12, right: 12, top: 15),
