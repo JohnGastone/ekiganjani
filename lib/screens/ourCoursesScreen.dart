@@ -28,6 +28,22 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               CircleAvatar(
+                backgroundColor: Colors.white24,
+                child: InkWell(
+                  child: Icon(CupertinoIcons.back),
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                ),
+              ),
+              Text(
+                "Our Courses",
+                style: GoogleFonts.spaceMono(
+                    fontSize: 24,
+                    color: Color.fromARGB(255, 18, 58, 93),
+                    fontWeight: FontWeight.bold),
+              ),
+              CircleAvatar(
                   backgroundColor: Colors.white24,
                   child: ClipOval(
                     child: Image.asset(
@@ -37,17 +53,6 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
                       width: double.infinity,
                     ),
                   )),
-              Text(
-                "Our Courses",
-                style: GoogleFonts.spaceMono(
-                    fontSize: 24,
-                    color: Color.fromARGB(255, 18, 58, 93),
-                    fontWeight: FontWeight.bold),
-              ),
-              CircleAvatar(
-                backgroundColor: Colors.white24,
-                child: Icon(Icons.search),
-              ),
             ],
           ),
         ),
