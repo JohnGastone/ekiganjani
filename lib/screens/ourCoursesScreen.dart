@@ -25,7 +25,7 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
         title: Padding(
           padding: const EdgeInsets.only(top: 15, right: 15, left: 15),
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               CircleAvatar(
                 backgroundColor: Colors.white24,
