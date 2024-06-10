@@ -1,4 +1,8 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Studentprofile extends StatefulWidget {
   const Studentprofile({super.key});
@@ -10,6 +14,29 @@ class Studentprofile extends StatefulWidget {
 class _StudentprofileState extends State<Studentprofile> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      backgroundColor: Color.fromARGB(255, 28, 39, 81),
+      body: Center(
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  Icon(
+                    CupertinoIcons.back,
+                    color: Colors.white,
+                  ),
+                  Text(
+                    "Profile",
+                    style: GoogleFonts.spaceMono(
+                        fontSize: 20, color: Colors.white),
+                  )
+                ],
+              )
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
