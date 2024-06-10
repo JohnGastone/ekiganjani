@@ -24,7 +24,7 @@ class CourseList {
     ),
     CoursesModel(
       "Video Editing",
-      "Omary Mkuse",
+      "Tahya Kassim",
       "20/20 Videos",
       "100%",
     ),
