@@ -8,7 +8,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:animated_notch_bottom_bar/animated_notch_bottom_bar/animated_notch_bottom_bar.dart';
 
 import 'chatScreen.dart';
-import 'ourCoursesScreen.dart';
+import 'studentCourses.dart';
 
 class MyHomePage extends StatefulWidget {
   final NotchBottomBarController? controller;
@@ -45,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
         controller: (_controller),
       ),
       const ChatScreen(),
-      const OurCoursesScreen(),
+      const StudentCourses(),
     ];
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 28, 39, 81),
@@ -241,7 +241,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => OurCoursesScreen()));
+                                builder: (context) => StudentCourses()));
                       },
                     )
                   ],

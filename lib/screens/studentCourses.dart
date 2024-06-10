@@ -6,14 +6,14 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../models/courses_model.dart';
 
-class OurCoursesScreen extends StatefulWidget {
-  const OurCoursesScreen({super.key});
+class StudentCourses extends StatefulWidget {
+  const StudentCourses({super.key});
 
   @override
-  State<OurCoursesScreen> createState() => _OurCoursesScreenState();
+  State<StudentCourses> createState() => _StudentCoursesState();
 }
 
-class _OurCoursesScreenState extends State<OurCoursesScreen> {
+class _StudentCoursesState extends State<StudentCourses> {
   List<CoursesModel> getCourses = List.from(CourseList.getAllCourses);
 
   @override
@@ -37,7 +37,7 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
                 ),
               ),
               Text(
-                "Our Courses",
+                "My Courses",
                 style: GoogleFonts.spaceMono(
                     fontSize: 24,
                     color: Color.fromARGB(255, 18, 58, 93),
