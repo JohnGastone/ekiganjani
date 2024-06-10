@@ -32,10 +32,13 @@ class _StudentprofileState extends State<Studentprofile> {
                       Navigator.pop(context);
                     },
                   ),
-                  Text(
-                    "Profile",
-                    style: GoogleFonts.spaceMono(
-                        fontSize: 20, color: Colors.white),
+                  CircleAvatar(
+                    backgroundColor: Colors.white24,
+                    child: Text(
+                      "Profile",
+                      style: GoogleFonts.spaceMono(
+                          fontSize: 20, color: Colors.white),
+                    ),
                   )
                 ],
               ),
