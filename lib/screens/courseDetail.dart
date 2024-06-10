@@ -217,7 +217,8 @@ class _CoursedetailsState extends State<Coursedetails> {
                   physics: NeverScrollableScrollPhysics(),
                   shrinkWrap: true,
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 1, mainAxisSpacing: 20),
+                    crossAxisCount: 1,
+                  ),
                   itemCount: getModules.length,
                   itemBuilder: (context, index) => InkWell(
                       child: Container(
@@ -226,15 +227,50 @@ class _CoursedetailsState extends State<Coursedetails> {
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(15),
                               color: Colors.white24),
-                          child: Row(
-                            children: [
-                              Container(
-                                decoration: BoxDecoration(
-                                    image: DecorationImage(
-                                        image: AssetImage(
-                                            ("./images/image.png")))),
-                              )
-                            ],
+                          child: Padding(
+                            padding: const EdgeInsets.only(right: 15, left: 15),
+                            child: Row(
+                              children: [
+                                Container(
+                                  height: 80,
+                                  width: 80,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(15),
+                                      image: DecorationImage(
+                                          image:
+                                              AssetImage("./images/image.png"),
+                                          fit: BoxFit.cover)),
+                                ),
+                                Column(
+                                  children: [
+                                    Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          getModules[index].moduleName!,
+                                          style: GoogleFonts.spaceMono(
+                                              fontSize: 16,
+                                              color: Color.fromARGB(
+                                                  255, 18, 58, 93),
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                        SizedBox(
+                                          height: 15,
+                                        ),
+                                        Text(
+                                          getModules[index].moduleDuration!,
+                                          style: GoogleFonts.spaceMono(
+                                              fontSize: 16,
+                                              color: Colors.grey,
+                                              fontWeight: FontWeight.w400),
+                                        )
+                                      ],
+                                    ),
+                                  ],
+                                )
+                              ],
+                            ),
                           ))
                       // child: Card(
                       //     color: Colors.white24,
