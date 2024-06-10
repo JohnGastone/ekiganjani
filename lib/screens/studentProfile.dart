@@ -19,29 +19,32 @@ class _StudentprofileState extends State<Studentprofile> {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         backgroundColor: Color.fromARGB(255, 28, 39, 81),
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            InkWell(
-              child: CircleAvatar(
-                backgroundColor: Colors.white24,
-                child: Icon(
-                  CupertinoIcons.back,
-                  color: Colors.white,
+        title: Padding(
+          padding: const EdgeInsets.only(right: 110),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              InkWell(
+                child: CircleAvatar(
+                  backgroundColor: Colors.white24,
+                  child: Icon(
+                    CupertinoIcons.back,
+                    color: Colors.white,
+                  ),
                 ),
+                onTap: () {
+                  Navigator.pop(context);
+                },
               ),
-              onTap: () {
-                Navigator.pop(context);
-              },
-            ),
-            Text(
-              "Profile",
-              style: GoogleFonts.spaceMono(
-                  fontSize: 20,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold),
-            )
-          ],
+              Text(
+                "Profile",
+                style: GoogleFonts.spaceMono(
+                    fontSize: 25,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold),
+              )
+            ],
+          ),
         ),
       ),
       body: Center(
@@ -49,16 +52,16 @@ class _StudentprofileState extends State<Studentprofile> {
           child: Column(
             children: [
               SizedBox(
-                height: 200,
+                height: 100,
               ),
               Container(
-                height: 500,
+                height: 600,
                 width: double.maxFinite,
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.only(
-                        topRight: Radius.circular(150),
-                        topLeft: Radius.circular(150))),
+                        topRight: Radius.circular(170),
+                        topLeft: Radius.circular(170))),
                 child: Column(
                   children: [
                     CircleAvatar(
