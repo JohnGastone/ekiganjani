@@ -32,7 +32,7 @@ class _CoursedetailsState extends State<Coursedetails> {
                       backgroundColor: const Color.fromARGB(60, 214, 209, 209),
                       child: InkWell(
                         child: Icon(
-                          Icons.arrow_back,
+                          CupertinoIcons.back,
                           color: Color.fromARGB(255, 18, 58, 93),
                         ),
                         onTap: () {
@@ -47,9 +47,14 @@ class _CoursedetailsState extends State<Coursedetails> {
                       )),
                   CircleAvatar(
                       backgroundColor: const Color.fromARGB(60, 214, 209, 209),
-                      child: Icon(
-                        CupertinoIcons.heart,
-                        color: Color.fromARGB(255, 18, 58, 93),
+                      child: InkWell(
+                        child: Icon(
+                          Icons.arrow_back,
+                          color: Color.fromARGB(255, 18, 58, 93),
+                        ),
+                        onTap: () {
+                          Navigator.pop(context);
+                        },
                       )),
                 ],
               ),
