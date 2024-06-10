@@ -281,64 +281,7 @@ class _CoursedetailsState extends State<Coursedetails> {
                                 ],
                               ),
                             )),
-                      )
-                          // child: Card(
-                          //     color: Colors.white24,
-                          //     elevation: 5,
-                          //     shape: RoundedRectangleBorder(
-                          //       borderRadius: BorderRadius.circular(15),
-                          //     ),
-                          //     child: Padding(
-                          //       padding: EdgeInsets.all(15),
-                          //       child: Row(
-                          //         children: [
-                          //           Container(
-                          //             height: 80,
-                          //             width: 80,
-                          //             decoration: BoxDecoration(
-                          //                 borderRadius: BorderRadius.circular(10),
-                          //                 image: DecorationImage(
-                          //                     image: AssetImage(
-                          //                         "./images/image.png"),
-                          //                     fit: BoxFit.cover)),
-                          //           ),
-                          //           SizedBox(
-                          //             width: 10,
-                          //           ),
-                          //           Column(
-                          //             crossAxisAlignment:
-                          //                 CrossAxisAlignment.start,
-                          //             children: [
-                          //               Text(
-                          //                 getModules[index].moduleName!,
-                          //                 style: GoogleFonts.spaceMono(
-                          //                     fontSize: 16,
-                          //                     color:
-                          //                         Color.fromARGB(255, 18, 58, 93),
-                          //                     fontWeight: FontWeight.bold),
-                          //               ),
-                          //               SizedBox(
-                          //                 height: 15,
-                          //               ),
-                          //               Text(
-                          //                 getModules[index].moduleDuration!,
-                          //                 style: GoogleFonts.spaceMono(
-                          //                     fontSize: 16,
-                          //                     color: Colors.grey,
-                          //                     fontWeight: FontWeight.w400),
-                          //               )
-                          //             ],
-                          //           ),
-                          //           Spacer(),
-                          //           Image.asset(
-                          //             ("./images/progress.png"),
-                          //             height: 50,
-                          //             width: 50,
-                          //           )
-                          //         ],
-                          //       ),
-                          //     )),
-                          )),
+                      ))),
             ),
             SizedBox(
               height: 50,
