@@ -224,6 +224,9 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
                   ),
                 ),
               ),
+              SizedBox(
+                height: 50,
+              )
             ],
           ),
         ),
