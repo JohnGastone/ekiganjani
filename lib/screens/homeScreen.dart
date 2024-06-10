@@ -240,7 +240,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     InkWell(
                       child: Text(
-                        "See All",
+                        "My Courses",
                         style: GoogleFonts.spaceMono(
                             fontSize: 20,
                             color: Colors.grey,
