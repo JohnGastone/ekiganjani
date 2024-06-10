@@ -61,7 +61,7 @@ class TrendingCourseList {
     TrendingCoursesModel("HCI", "10 Lectures"),
     TrendingCoursesModel("Networking", "20 Lectures"),
     TrendingCoursesModel("Databases", "25 Lectures"),
-    TrendingCoursesModel("Virtual Learning", "15 Lectures")
+    TrendingCoursesModel("e-Learning", "15 Lectures")
   ];
 
   static List<TrendingCoursesModel> getAllTrendingCourses =
