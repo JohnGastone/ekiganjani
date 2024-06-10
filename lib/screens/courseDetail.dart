@@ -272,6 +272,12 @@ class _CoursedetailsState extends State<Coursedetails> {
                                       ),
                                     ],
                                   ),
+                                  Spacer(),
+                                  Image.asset(
+                                    ("./images/progress.png"),
+                                    height: 50,
+                                    width: 50,
+                                  )
                                 ],
                               ),
                             )),
