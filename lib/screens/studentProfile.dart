@@ -21,19 +21,27 @@ class _StudentprofileState extends State<Studentprofile> {
           child: Column(
             children: [
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Icon(
                     CupertinoIcons.back,
                     color: Colors.white,
                   ),
-                  Center(
-                    child: Text(
-                      "Profile",
-                      style: GoogleFonts.spaceMono(
-                          fontSize: 20, color: Colors.white),
-                    ),
+                  Text(
+                    "Profile",
+                    style: GoogleFonts.spaceMono(
+                        fontSize: 20, color: Colors.white),
                   )
                 ],
+              ),
+              Container(
+                height: 1200,
+                width: double.maxFinite,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                        topRight: Radius.circular(40),
+                        topLeft: Radius.circular(40))),
               )
             ],
           ),
