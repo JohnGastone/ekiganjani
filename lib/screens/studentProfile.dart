@@ -39,8 +39,11 @@ class _StudentprofileState extends State<Studentprofile> {
                   )
                 ],
               ),
+              SizedBox(
+                height: 150,
+              ),
               Container(
-                height: 800,
+                height: 500,
                 width: double.maxFinite,
                 decoration: BoxDecoration(
                     color: Colors.white,
