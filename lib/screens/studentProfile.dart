@@ -219,7 +219,7 @@ class _StudentprofileState extends State<Studentprofile> {
                               CircleAvatar(
                                 backgroundColor:
                                     Color.fromARGB(255, 185, 130, 190),
-                                child: Icon(CupertinoIcons.person),
+                                child: Icon(CupertinoIcons.doc),
                               ),
                               SizedBox(
                                 width: 10,
