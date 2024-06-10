@@ -40,7 +40,7 @@ class _StudentprofileState extends State<Studentprofile> {
                 ],
               ),
               SizedBox(
-                height: 150,
+                height: 180,
               ),
               Container(
                 height: 500,
