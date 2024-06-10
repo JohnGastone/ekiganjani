@@ -334,6 +334,9 @@ class _MyHomePageState extends State<MyHomePage> {
                                     builder: (context) => Coursedetails()));
                           },
                         )),
+              ),
+              SizedBox(
+                height: 40,
               )
             ],
           ),
