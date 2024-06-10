@@ -23,9 +23,14 @@ class _StudentprofileState extends State<Studentprofile> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Icon(
-                    CupertinoIcons.back,
-                    color: Colors.white,
+                  InkWell(
+                    child: Icon(
+                      CupertinoIcons.back,
+                      color: Colors.white,
+                    ),
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
                   ),
                   Text(
                     "Profile",
@@ -35,7 +40,7 @@ class _StudentprofileState extends State<Studentprofile> {
                 ],
               ),
               Container(
-                height: 1200,
+                height: 800,
                 width: double.maxFinite,
                 decoration: BoxDecoration(
                     color: Colors.white,
