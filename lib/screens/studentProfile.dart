@@ -102,7 +102,7 @@ class _StudentprofileState extends State<Studentprofile> {
                             "kathleenlugendo@cyber.com",
                             style: GoogleFonts.spaceMono(
                               fontSize: 20,
-                              fontWeight: FontWeight.bold,
+                              fontWeight: FontWeight.w300,
                               color: Colors.grey,
                             ),
                           ),
