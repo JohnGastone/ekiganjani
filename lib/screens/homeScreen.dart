@@ -2,6 +2,7 @@
 
 import 'package:ekiganjani/models/courses_model.dart';
 import 'package:ekiganjani/screens/courseDetail.dart';
+import 'package:ekiganjani/screens/studentProfile.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -60,11 +61,19 @@ class _MyHomePageState extends State<MyHomePage> {
                 CircleAvatar(
                     backgroundColor: Color.fromARGB(255, 18, 58, 93),
                     child: ClipOval(
-                        child: Image.asset(
-                      "./images/image.png",
-                      fit: BoxFit.cover,
-                      height: double.infinity,
-                      width: double.infinity,
+                        child: InkWell(
+                      child: Image.asset(
+                        "./images/image.png",
+                        fit: BoxFit.cover,
+                        height: double.infinity,
+                        width: double.infinity,
+                      ),
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Studentprofile()));
+                      },
                     ))),
                 SizedBox(
                   width: 10,
