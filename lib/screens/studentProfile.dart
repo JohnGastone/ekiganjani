@@ -26,10 +26,12 @@ class _StudentprofileState extends State<Studentprofile> {
                     CupertinoIcons.back,
                     color: Colors.white,
                   ),
-                  Text(
-                    "Profile",
-                    style: GoogleFonts.spaceMono(
-                        fontSize: 20, color: Colors.white),
+                  Center(
+                    child: Text(
+                      "Profile",
+                      style: GoogleFonts.spaceMono(
+                          fontSize: 20, color: Colors.white),
+                    ),
                   )
                 ],
               )
