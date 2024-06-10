@@ -16,34 +16,40 @@ class _StudentprofileState extends State<Studentprofile> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 28, 39, 81),
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
+        backgroundColor: Color.fromARGB(255, 28, 39, 81),
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            InkWell(
+              child: CircleAvatar(
+                backgroundColor: Colors.white24,
+                child: Icon(
+                  CupertinoIcons.back,
+                  color: Colors.white,
+                ),
+              ),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            Text(
+              "Profile",
+              style: GoogleFonts.spaceMono(
+                  fontSize: 20,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold),
+            )
+          ],
+        ),
+      ),
       body: Center(
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  InkWell(
-                    child: Icon(
-                      CupertinoIcons.back,
-                      color: Colors.white,
-                    ),
-                    onTap: () {
-                      Navigator.pop(context);
-                    },
-                  ),
-                  CircleAvatar(
-                    backgroundColor: Colors.white24,
-                    child: Text(
-                      "Profile",
-                      style: GoogleFonts.spaceMono(
-                          fontSize: 20, color: Colors.white),
-                    ),
-                  )
-                ],
-              ),
               SizedBox(
-                height: 180,
+                height: 200,
               ),
               Container(
                 height: 500,
