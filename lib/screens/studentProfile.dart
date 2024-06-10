@@ -154,14 +154,14 @@ class _StudentprofileState extends State<Studentprofile> {
                             children: [
                               CircleAvatar(
                                 backgroundColor:
-                                    Color.fromARGB(255, 219, 158, 178),
-                                child: Icon(CupertinoIcons.person),
+                                    Color.fromARGB(255, 169, 158, 219),
+                                child: Icon(CupertinoIcons.book),
                               ),
                               SizedBox(
                                 width: 10,
                               ),
                               Text(
-                                "User Details",
+                                "Certificate",
                                 style: GoogleFonts.spaceMono(
                                     fontSize: 18,
                                     color: Color.fromARGB(255, 28, 39, 81)),
@@ -186,14 +186,14 @@ class _StudentprofileState extends State<Studentprofile> {
                             children: [
                               CircleAvatar(
                                 backgroundColor:
-                                    Color.fromARGB(255, 219, 158, 178),
-                                child: Icon(CupertinoIcons.person),
+                                    Color.fromARGB(255, 233, 232, 163),
+                                child: Icon(Icons.account_balance_wallet),
                               ),
                               SizedBox(
                                 width: 10,
                               ),
                               Text(
-                                "User Details",
+                                "Payment",
                                 style: GoogleFonts.spaceMono(
                                     fontSize: 18,
                                     color: Color.fromARGB(255, 28, 39, 81)),
@@ -218,7 +218,7 @@ class _StudentprofileState extends State<Studentprofile> {
                             children: [
                               CircleAvatar(
                                 backgroundColor:
-                                    Color.fromARGB(255, 214, 158, 219),
+                                    Color.fromARGB(255, 185, 130, 190),
                                 child: Icon(CupertinoIcons.person),
                               ),
                               SizedBox(
