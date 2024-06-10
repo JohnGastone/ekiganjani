@@ -103,6 +103,7 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
                 height: 10,
               ),
               ListView.builder(
+                physics: NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
                 scrollDirection: Axis.vertical,
                 itemCount: getCourses.length,
