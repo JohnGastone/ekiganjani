@@ -116,20 +116,154 @@ class _StudentprofileState extends State<Studentprofile> {
                       padding: const EdgeInsets.only(
                           left: 15, right: 15, bottom: 15),
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          CircleAvatar(
-                            backgroundColor: Color.fromARGB(255, 219, 158, 178),
-                            child: Icon(CupertinoIcons.person),
+                          Row(
+                            children: [
+                              CircleAvatar(
+                                backgroundColor:
+                                    Color.fromARGB(255, 219, 158, 178),
+                                child: Icon(CupertinoIcons.person),
+                              ),
+                              SizedBox(
+                                width: 10,
+                              ),
+                              Text(
+                                "User Details",
+                                style: GoogleFonts.spaceMono(
+                                    fontSize: 18,
+                                    color: Color.fromARGB(255, 28, 39, 81)),
+                              )
+                            ],
                           ),
-                          SizedBox(
-                            width: 10,
+                          Icon(CupertinoIcons.forward,
+                              color: Color.fromARGB(255, 28, 39, 81))
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(
+                          left: 15, right: 15, bottom: 15),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              CircleAvatar(
+                                backgroundColor:
+                                    Color.fromARGB(255, 219, 158, 178),
+                                child: Icon(CupertinoIcons.person),
+                              ),
+                              SizedBox(
+                                width: 10,
+                              ),
+                              Text(
+                                "User Details",
+                                style: GoogleFonts.spaceMono(
+                                    fontSize: 18,
+                                    color: Color.fromARGB(255, 28, 39, 81)),
+                              )
+                            ],
                           ),
-                          Text(
-                            "User Details",
-                            style: GoogleFonts.spaceMono(
-                                fontSize: 18,
-                                color: Color.fromARGB(255, 28, 39, 81)),
-                          )
+                          Icon(CupertinoIcons.forward,
+                              color: Color.fromARGB(255, 28, 39, 81))
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(
+                          left: 15, right: 15, bottom: 15),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              CircleAvatar(
+                                backgroundColor:
+                                    Color.fromARGB(255, 219, 158, 178),
+                                child: Icon(CupertinoIcons.person),
+                              ),
+                              SizedBox(
+                                width: 10,
+                              ),
+                              Text(
+                                "User Details",
+                                style: GoogleFonts.spaceMono(
+                                    fontSize: 18,
+                                    color: Color.fromARGB(255, 28, 39, 81)),
+                              )
+                            ],
+                          ),
+                          Icon(CupertinoIcons.forward,
+                              color: Color.fromARGB(255, 28, 39, 81))
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(
+                          left: 15, right: 15, bottom: 15),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              CircleAvatar(
+                                backgroundColor:
+                                    Color.fromARGB(255, 219, 158, 178),
+                                child: Icon(CupertinoIcons.person),
+                              ),
+                              SizedBox(
+                                width: 10,
+                              ),
+                              Text(
+                                "User Details",
+                                style: GoogleFonts.spaceMono(
+                                    fontSize: 18,
+                                    color: Color.fromARGB(255, 28, 39, 81)),
+                              )
+                            ],
+                          ),
+                          Icon(CupertinoIcons.forward,
+                              color: Color.fromARGB(255, 28, 39, 81))
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(
+                          left: 15, right: 15, bottom: 15),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              CircleAvatar(
+                                backgroundColor:
+                                    Color.fromARGB(255, 219, 158, 178),
+                                child: Icon(Icons.logout),
+                              ),
+                              SizedBox(
+                                width: 10,
+                              ),
+                              Text(
+                                "Logout",
+                                style: GoogleFonts.spaceMono(
+                                    fontSize: 18,
+                                    color: Color.fromARGB(255, 28, 39, 81)),
+                              )
+                            ],
+                          ),
                         ],
                       ),
                     )
