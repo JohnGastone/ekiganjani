@@ -212,77 +212,74 @@ class _CoursedetailsState extends State<Coursedetails> {
             SizedBox(
               height: 20,
             ),
-            SizedBox(
-              child: ListView.builder(
-                  scrollDirection: Axis.vertical,
-                  physics: NeverScrollableScrollPhysics(),
-                  shrinkWrap: true,
-                  itemCount: getModules.length,
-                  itemBuilder: (context, index) => InkWell(
+            ListView.builder(
+                scrollDirection: Axis.vertical,
+                physics: NeverScrollableScrollPhysics(),
+                shrinkWrap: true,
+                itemCount: getModules.length,
+                itemBuilder: (context, index) => InkWell(
+                        child: Padding(
+                      padding: const EdgeInsets.only(
+                          bottom: 20, left: 12, right: 12),
+                      child: Container(
+                          height: 120,
+                          width: 250,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(15),
+                              color: const Color.fromARGB(60, 127, 123, 123)),
                           child: Padding(
-                        padding: const EdgeInsets.only(bottom: 20),
-                        child: Container(
-                            height: 120,
-                            width: 250,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(15),
-                                color: Colors.white24),
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.only(right: 15, left: 15),
-                              child: Row(
-                                children: [
-                                  Container(
-                                    height: 80,
-                                    width: 80,
-                                    decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(15),
-                                        image: DecorationImage(
-                                            image: AssetImage(
-                                                "./images/image.png"),
-                                            fit: BoxFit.cover)),
-                                  ),
-                                  SizedBox(
-                                    width: 10,
-                                  ),
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      SizedBox(
-                                        height: 20,
-                                      ),
-                                      Text(
-                                        getModules[index].moduleName!,
-                                        style: GoogleFonts.spaceMono(
-                                            fontSize: 16,
-                                            color:
-                                                Color.fromARGB(255, 18, 58, 93),
-                                            fontWeight: FontWeight.bold),
-                                      ),
-                                      SizedBox(
-                                        height: 15,
-                                      ),
-                                      Text(
-                                        getModules[index].moduleDuration!,
-                                        style: GoogleFonts.spaceMono(
-                                            fontSize: 16,
-                                            color: Colors.grey,
-                                            fontWeight: FontWeight.w400),
-                                      ),
-                                    ],
-                                  ),
-                                  Spacer(),
-                                  Image.asset(
-                                    ("./images/progress.png"),
-                                    height: 50,
-                                    width: 50,
-                                  )
-                                ],
-                              ),
-                            )),
-                      ))),
-            ),
+                            padding: const EdgeInsets.only(right: 10, left: 10),
+                            child: Row(
+                              children: [
+                                Container(
+                                  height: 80,
+                                  width: 80,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(15),
+                                      image: DecorationImage(
+                                          image:
+                                              AssetImage("./images/image.png"),
+                                          fit: BoxFit.cover)),
+                                ),
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    SizedBox(
+                                      height: 20,
+                                    ),
+                                    Text(
+                                      getModules[index].moduleName!,
+                                      style: GoogleFonts.spaceMono(
+                                          fontSize: 16,
+                                          color:
+                                              Color.fromARGB(255, 18, 58, 93),
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                    SizedBox(
+                                      height: 15,
+                                    ),
+                                    Text(
+                                      getModules[index].moduleDuration!,
+                                      style: GoogleFonts.spaceMono(
+                                          fontSize: 16,
+                                          color: Colors.grey,
+                                          fontWeight: FontWeight.w400),
+                                    ),
+                                  ],
+                                ),
+                                Spacer(),
+                                Image.asset(
+                                  ("./images/progress.png"),
+                                  height: 50,
+                                  width: 50,
+                                )
+                              ],
+                            ),
+                          )),
+                    ))),
             SizedBox(
               height: 50,
             )
