@@ -213,12 +213,10 @@ class _CoursedetailsState extends State<Coursedetails> {
               height: 20,
             ),
             SizedBox(
-              child: GridView.builder(
+              child: ListView.builder(
+                  scrollDirection: Axis.vertical,
                   physics: NeverScrollableScrollPhysics(),
                   shrinkWrap: true,
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 1,
-                  ),
                   itemCount: getModules.length,
                   itemBuilder: (context, index) => InkWell(
                       child: Container(
