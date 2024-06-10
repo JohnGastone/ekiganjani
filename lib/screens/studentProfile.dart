@@ -55,7 +55,7 @@ class _StudentprofileState extends State<Studentprofile> {
                 height: 100,
               ),
               Container(
-                height: 600,
+                height: 610,
                 width: double.maxFinite,
                 decoration: BoxDecoration(
                     color: Colors.white,
