@@ -218,14 +218,14 @@ class _StudentprofileState extends State<Studentprofile> {
                             children: [
                               CircleAvatar(
                                 backgroundColor:
-                                    Color.fromARGB(255, 219, 158, 178),
+                                    Color.fromARGB(255, 214, 158, 219),
                                 child: Icon(CupertinoIcons.person),
                               ),
                               SizedBox(
                                 width: 10,
                               ),
                               Text(
-                                "User Details",
+                                "Document",
                                 style: GoogleFonts.spaceMono(
                                     fontSize: 18,
                                     color: Color.fromARGB(255, 28, 39, 81)),
@@ -250,7 +250,7 @@ class _StudentprofileState extends State<Studentprofile> {
                             children: [
                               CircleAvatar(
                                 backgroundColor:
-                                    Color.fromARGB(255, 219, 158, 178),
+                                    Color.fromARGB(255, 158, 192, 219),
                                 child: Icon(Icons.logout),
                               ),
                               SizedBox(
