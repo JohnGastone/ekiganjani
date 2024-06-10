@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, unused_local_variable
 
 import 'package:ekiganjani/models/courses_model.dart';
 import 'package:ekiganjani/screens/courseDetail.dart';
@@ -229,10 +229,20 @@ class _MyHomePageState extends State<MyHomePage> {
                         color: Colors.white,
                       ),
                     ),
-                    Text(
-                      "See All",
-                      style: GoogleFonts.spaceMono(
-                          fontSize: 15, color: Colors.grey),
+                    InkWell(
+                      child: Text(
+                        "See All",
+                        style: GoogleFonts.spaceMono(
+                            fontSize: 20,
+                            color: Colors.grey,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => OurCoursesScreen()));
+                      },
                     )
                   ],
                 ),

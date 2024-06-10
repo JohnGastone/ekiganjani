@@ -112,7 +112,7 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
                     padding: const EdgeInsets.only(
                         left: 10, right: 10, top: 10, bottom: 10),
                     child: SizedBox(
-                      width: 350,
+                      width: 400,
                       height: 123,
                       child: Card(
                         color: Colors.white24,
@@ -147,7 +147,7 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
                                     children: [
                                       Icon(
                                         CupertinoIcons.person,
-                                        color: Colors.grey,
+                                        color: Color.fromARGB(255, 18, 58, 93),
                                       ),
                                       SizedBox(
                                         width: 8,
@@ -155,7 +155,7 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
                                       Text(
                                         getCourses[index].courseInstructor!,
                                         style: GoogleFonts.spaceMono(
-                                            fontSize: 16, color: Colors.grey),
+                                            fontSize: 16, color: Colors.white),
                                       )
                                     ],
                                   ),
@@ -169,7 +169,8 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
                                         Text(
                                           getCourses[index].courseVideos!,
                                           style: GoogleFonts.spaceMono(
-                                              fontSize: 16, color: Colors.grey),
+                                              fontSize: 16,
+                                              color: Colors.white),
                                         ),
                                         SizedBox(
                                           width: 40,
@@ -177,7 +178,8 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
                                         Text(
                                           getCourses[index].progress!,
                                           style: GoogleFonts.spaceMono(
-                                              fontSize: 16, color: Colors.grey),
+                                              fontSize: 16,
+                                              color: Colors.white),
                                         )
                                       ]),
                                   SizedBox(
@@ -188,7 +190,7 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
                                     width: 190,
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(12),
-                                      color: Colors.white24,
+                                      color: Colors.white,
                                     ),
                                     child: Row(
                                       children: [
@@ -205,7 +207,7 @@ class _OurCoursesScreenState extends State<OurCoursesScreen> {
                                           width: 47,
                                           height: 10,
                                           decoration: BoxDecoration(
-                                              color: Colors.white24,
+                                              color: Colors.white,
                                               borderRadius:
                                                   BorderRadius.circular(12)),
                                         ),
