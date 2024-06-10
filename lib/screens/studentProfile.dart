@@ -79,14 +79,36 @@ class _StudentprofileState extends State<Studentprofile> {
                               backgroundColor: Colors.white24,
                               child: Icon(
                                 CupertinoIcons.pen,
-                                color: Colors.white,
+                                color: Color.fromARGB(255, 28, 39, 81),
                                 size: 15,
                               ),
                             ),
                           ),
                         ),
                       ),
-                    )
+                    ),
+                    Center(
+                      child: Column(
+                        children: [
+                          Text(
+                            "Kathleen Lugendo",
+                            style: GoogleFonts.spaceMono(
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold,
+                              color: Color.fromARGB(255, 28, 39, 81),
+                            ),
+                          ),
+                          Text(
+                            "kathleenlugendo@cyber.com",
+                            style: GoogleFonts.spaceMono(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.grey,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               )
