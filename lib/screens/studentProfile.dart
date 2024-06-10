@@ -71,7 +71,9 @@ class _StudentprofileState extends State<Studentprofile> {
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(40),
                             image: DecorationImage(
-                                image: AssetImage("./images/p2.png"),
+                                image: AssetImage(
+                                  "./images/p2.png",
+                                ),
                                 fit: BoxFit.cover)),
                         child: Align(
                           alignment: Alignment.topRight,
