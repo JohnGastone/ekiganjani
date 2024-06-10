@@ -57,8 +57,38 @@ class _StudentprofileState extends State<Studentprofile> {
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.only(
-                        topRight: Radius.circular(40),
-                        topLeft: Radius.circular(40))),
+                        topRight: Radius.circular(150),
+                        topLeft: Radius.circular(150))),
+                child: Column(
+                  children: [
+                    CircleAvatar(
+                      child: Container(
+                        height: 120,
+                        width: 120,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(40),
+                            image: DecorationImage(
+                                image: AssetImage("./images/p2.png"),
+                                fit: BoxFit.cover)),
+                        child: Align(
+                          alignment: Alignment.topRight,
+                          child: SizedBox(
+                            height: 20,
+                            width: 20,
+                            child: CircleAvatar(
+                              backgroundColor: Colors.white24,
+                              child: Icon(
+                                CupertinoIcons.pen,
+                                color: Colors.white,
+                                size: 15,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
               )
             ],
           ),
