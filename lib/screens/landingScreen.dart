@@ -33,9 +33,18 @@ class _LandingscreenState extends State<Landingscreen> {
                 ),
               ),
               SizedBox(
-                height: 15,
+                height: 25,
               ),
-              Image.asset("./images/g.png"),
+              ClipOval(
+                  child: Image.asset(
+                "./images/g.png",
+                height: 210,
+                width: 280,
+                fit: BoxFit.cover,
+              )),
+              SizedBox(
+                height: 25,
+              ),
               Container(
                 height: 450,
                 width: double.maxFinite,
