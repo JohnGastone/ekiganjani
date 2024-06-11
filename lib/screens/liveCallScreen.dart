@@ -41,8 +41,8 @@ class _LiveCallScreenState extends State<LiveCallScreen> {
                         onTap: () => Navigator.pop(context),
                       ),
                       Container(
-                        height: 90,
-                        width: 60,
+                        height: 130,
+                        width: 80,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(12),
                             image: DecorationImage(
