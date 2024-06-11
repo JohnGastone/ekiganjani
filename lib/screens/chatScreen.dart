@@ -17,32 +17,32 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        title: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Row(
-            children: [
-              Icon(CupertinoIcons.person),
-              SizedBox(
-                width: 80,
-              ),
-              Text(
-                "Chats",
-                style: GoogleFonts.spaceMono(
-                  fontSize: 30,
-                  color: Color.fromARGB(255, 18, 58, 93),
+        appBar: AppBar(
+          automaticallyImplyLeading: false,
+          title: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              children: [
+                Icon(CupertinoIcons.person),
+                SizedBox(
+                  width: 80,
                 ),
-              )
-            ],
+                Text(
+                  "Chats",
+                  style: GoogleFonts.spaceMono(
+                    fontSize: 30,
+                    color: Color.fromARGB(255, 18, 58, 93),
+                  ),
+                )
+              ],
+            ),
           ),
         ),
-      ),
-      body: Center(
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              Container(
+        body: Stack(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 30),
+              child: Container(
                   height: 50,
                   width: 300,
                   decoration: BoxDecoration(
@@ -61,100 +61,110 @@ class _ChatScreenState extends State<ChatScreen> {
                           color: Color.fromARGB(255, 18, 58, 93),
                         )),
                   )),
-              SizedBox(
-                height: 20,
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 20, left: 30),
-                child: ListView.builder(
-                  physics: NeverScrollableScrollPhysics(),
-                  shrinkWrap: true,
-                  scrollDirection: Axis.vertical,
-                  itemCount: displayChats.length,
-                  itemBuilder: (context, index) => Padding(
-                    padding: const EdgeInsets.only(bottom: 20),
-                    child: SizedBox(
-                      width: 250,
-                      child: Row(
-                        children: [
-                          SizedBox(
-                            height: 50,
-                            width: 50,
-                            child: CircleAvatar(
-                                child: ClipOval(
-                              child: Image.asset(
-                                "./images/image.png",
-                                fit: BoxFit.cover,
-                                width: double.infinity,
-                                height: double.infinity,
-                              ),
-                            )),
-                          ),
-                          SizedBox(
-                            width: 8,
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                displayChats[index].name!,
-                                style: GoogleFonts.spaceMono(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.bold,
-                                  color: Color.fromARGB(255, 18, 58, 93),
+            ),
+            SizedBox(
+              height: 35,
+            ),
+            Center(
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 20, left: 30),
+                      child: ListView.builder(
+                        physics: NeverScrollableScrollPhysics(),
+                        shrinkWrap: true,
+                        scrollDirection: Axis.vertical,
+                        itemCount: displayChats.length,
+                        itemBuilder: (context, index) => Padding(
+                          padding: const EdgeInsets.only(bottom: 20),
+                          child: SizedBox(
+                            width: 250,
+                            child: Row(
+                              children: [
+                                SizedBox(
+                                  height: 50,
+                                  width: 50,
+                                  child: CircleAvatar(
+                                      child: ClipOval(
+                                    child: Image.asset(
+                                      "./images/image.png",
+                                      fit: BoxFit.cover,
+                                      width: double.infinity,
+                                      height: double.infinity,
+                                    ),
+                                  )),
                                 ),
-                              ),
-                              SizedBox(
-                                height: 10,
-                              ),
-                              Text(
-                                displayChats[index].chatPlaceholder!,
-                                style: GoogleFonts.spaceMono(
-                                    fontSize: 13, color: Colors.grey),
-                              )
-                            ],
-                          ),
-                          SizedBox(
-                            width: 40,
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.end,
-                            children: [
-                              Text(
-                                displayChats[index].chatTime!,
-                                style: GoogleFonts.spaceMono(
-                                    fontSize: 13,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.grey),
-                              ),
-                              SizedBox(
-                                height: 10,
-                              ),
-                              SizedBox(
-                                height: 20,
-                                width: 20,
-                                child: CircleAvatar(
-                                  backgroundColor:
-                                      Color.fromARGB(255, 18, 58, 93),
-                                  child: Text(
-                                    "${displayChats[index].unreadCount}",
-                                    style: GoogleFonts.spaceMono(
-                                        fontSize: 12, color: Colors.white),
-                                  ),
+                                SizedBox(
+                                  width: 8,
                                 ),
-                              )
-                            ],
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      displayChats[index].name!,
+                                      style: GoogleFonts.spaceMono(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.bold,
+                                        color: Color.fromARGB(255, 18, 58, 93),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 10,
+                                    ),
+                                    Text(
+                                      displayChats[index].chatPlaceholder!,
+                                      style: GoogleFonts.spaceMono(
+                                          fontSize: 13, color: Colors.grey),
+                                    )
+                                  ],
+                                ),
+                                SizedBox(
+                                  width: 40,
+                                ),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.end,
+                                  children: [
+                                    Text(
+                                      displayChats[index].chatTime!,
+                                      style: GoogleFonts.spaceMono(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.grey),
+                                    ),
+                                    SizedBox(
+                                      height: 10,
+                                    ),
+                                    SizedBox(
+                                      height: 20,
+                                      width: 20,
+                                      child: CircleAvatar(
+                                        backgroundColor:
+                                            Color.fromARGB(255, 18, 58, 93),
+                                        child: Text(
+                                          "${displayChats[index].unreadCount}",
+                                          style: GoogleFonts.spaceMono(
+                                              fontSize: 12,
+                                              color: Colors.white),
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ],
+                            ),
                           ),
-                        ],
+                        ),
                       ),
                     ),
-                  ),
+                  ],
                 ),
               ),
-            ],
-          ),
-        ),
-      ),
-    );
+            ),
+          ],
+        ));
   }
 }
