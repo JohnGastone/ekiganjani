@@ -65,15 +65,16 @@ class _ChatScreenState extends State<ChatScreen> {
                 height: 20,
               ),
               Padding(
-                padding: EdgeInsets.only(top: 20, left: 20),
+                padding: EdgeInsets.only(top: 20, left: 30),
                 child: ListView.builder(
+                  physics: NeverScrollableScrollPhysics(),
                   shrinkWrap: true,
                   scrollDirection: Axis.vertical,
                   itemCount: displayChats.length,
                   itemBuilder: (context, index) => Padding(
                     padding: const EdgeInsets.only(bottom: 20),
                     child: SizedBox(
-                      width: 240,
+                      width: 250,
                       child: Row(
                         children: [
                           SizedBox(
