@@ -70,7 +70,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 child: Column(
                   children: [
                     SizedBox(
-                      height: 20,
+                      height: 40,
                     ),
                     Padding(
                       padding: EdgeInsets.only(top: 20, left: 30),
