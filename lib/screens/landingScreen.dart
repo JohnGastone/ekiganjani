@@ -22,24 +22,14 @@ class _LandingscreenState extends State<Landingscreen> {
             children: [
               Padding(
                 padding: const EdgeInsets.only(left: 15, right: 15, top: 30),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    CircleAvatar(
-                      backgroundColor: Colors.white24,
-                      child: Icon(
-                        Icons.arrow_back,
-                        color: Colors.white,
-                      ),
-                    ),
-                    TextButton(
-                        onPressed: () {},
-                        child: Text(
-                          "Skip",
-                          style: GoogleFonts.spaceMono(
-                              fontSize: 18, color: Colors.white),
-                        ))
-                  ],
+                child: Center(
+                  child: TextButton(
+                      onPressed: () {},
+                      child: Text(
+                        "Skip",
+                        style: GoogleFonts.spaceMono(
+                            fontSize: 18, color: Colors.white),
+                      )),
                 ),
               ),
               SizedBox(
