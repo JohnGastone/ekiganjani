@@ -23,9 +23,16 @@ class _ChatScreenState extends State<ChatScreen> {
             padding: const EdgeInsets.all(8.0),
             child: Row(
               children: [
-                Icon(CupertinoIcons.person),
+                ClipOval(
+                  child: Image.asset(
+                    "./images/image.png",
+                    height: 50,
+                    width: 50,
+                    fit: BoxFit.cover,
+                  ),
+                ),
                 SizedBox(
-                  width: 80,
+                  width: 70,
                 ),
                 Text(
                   "Chats",
