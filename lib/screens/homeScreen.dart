@@ -2,6 +2,7 @@
 
 import 'package:ekiganjani/models/courses_model.dart';
 import 'package:ekiganjani/screens/courseDetail.dart';
+import 'package:ekiganjani/screens/liveCallScreen.dart';
 import 'package:ekiganjani/screens/studentProfile.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -87,9 +88,17 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             CircleAvatar(
               backgroundColor: Color.fromARGB(255, 18, 58, 93),
-              child: Icon(
-                CupertinoIcons.bell,
-                color: Colors.white,
+              child: InkWell(
+                child: Icon(
+                  CupertinoIcons.bell,
+                  color: Colors.white,
+                ),
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => LiveCallScreen()));
+                },
               ),
             ),
           ],
