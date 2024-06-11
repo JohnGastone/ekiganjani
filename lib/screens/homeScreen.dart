@@ -88,17 +88,9 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             CircleAvatar(
               backgroundColor: Color.fromARGB(255, 18, 58, 93),
-              child: InkWell(
-                child: Icon(
-                  CupertinoIcons.bell,
-                  color: Colors.white,
-                ),
-                onTap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => LiveCallScreen()));
-                },
+              child: Icon(
+                CupertinoIcons.bell,
+                color: Colors.white,
               ),
             ),
           ],
