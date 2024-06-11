@@ -150,41 +150,34 @@ class _MyHomePageState extends State<MyHomePage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    InkWell(
-                        child: Container(
-                          height: 150,
-                          width: 100,
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(10)),
-                          child: Padding(
-                            padding: const EdgeInsets.only(top: 30),
-                            child: Column(
-                              children: [
-                                Icon(
-                                  CupertinoIcons.hand_draw,
-                                  color: Color.fromARGB(255, 18, 58, 93),
-                                ),
-                                SizedBox(
-                                  height: 40,
-                                ),
-                                Text(
-                                  "Design",
-                                  style: GoogleFonts.spaceMono(
-                                    fontSize: 18,
-                                    color: Color.fromARGB(255, 18, 58, 93),
-                                  ),
-                                )
-                              ],
+                    Container(
+                      height: 150,
+                      width: 100,
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(10)),
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 30),
+                        child: Column(
+                          children: [
+                            Icon(
+                              CupertinoIcons.hand_draw,
+                              color: Color.fromARGB(255, 18, 58, 93),
                             ),
-                          ),
+                            SizedBox(
+                              height: 40,
+                            ),
+                            Text(
+                              "Design",
+                              style: GoogleFonts.spaceMono(
+                                fontSize: 18,
+                                color: Color.fromARGB(255, 18, 58, 93),
+                              ),
+                            )
+                          ],
                         ),
-                        onTap: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => ChatScreen()));
-                        }),
+                      ),
+                    ),
                     Container(
                       height: 150,
                       width: 100,
