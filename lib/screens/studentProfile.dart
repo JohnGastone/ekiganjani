@@ -64,28 +64,35 @@ class _StudentprofileState extends State<Studentprofile> {
                         topLeft: Radius.circular(170))),
                 child: Column(
                   children: [
+                    SizedBox(
+                      height: 10,
+                    ),
                     CircleAvatar(
+                      radius: 60,
                       child: Container(
                         height: 120,
                         width: 120,
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(40),
+                            borderRadius: BorderRadius.circular(60),
                             image: DecorationImage(
                                 image: AssetImage(
                                   "./images/p2.png",
                                 ),
                                 fit: BoxFit.cover)),
-                        child: Align(
-                          alignment: Alignment.topRight,
-                          child: SizedBox(
-                            height: 20,
-                            width: 20,
-                            child: CircleAvatar(
-                              backgroundColor: Colors.white24,
-                              child: Icon(
-                                CupertinoIcons.pen,
-                                color: Color.fromARGB(255, 28, 39, 81),
-                                size: 15,
+                        child: Padding(
+                          padding: const EdgeInsets.only(top: 10),
+                          child: Align(
+                            alignment: Alignment.topRight,
+                            child: SizedBox(
+                              height: 30,
+                              width: 30,
+                              child: CircleAvatar(
+                                backgroundColor: Colors.white24,
+                                child: Icon(
+                                  CupertinoIcons.pen,
+                                  color: Color.fromARGB(255, 28, 39, 81),
+                                  size: 15,
+                                ),
                               ),
                             ),
                           ),
