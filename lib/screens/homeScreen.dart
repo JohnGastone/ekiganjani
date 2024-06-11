@@ -385,10 +385,34 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Icon(CupertinoIcons.home),
-                        Icon(CupertinoIcons.mail),
+                        InkWell(
+                          child: Icon(CupertinoIcons.home),
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => MyHomePage()));
+                          },
+                        ),
+                        InkWell(
+                          child: Icon(CupertinoIcons.mail),
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => ChatScreen()));
+                          },
+                        ),
                         Icon(CupertinoIcons.settings),
-                        Icon(CupertinoIcons.video_camera)
+                        InkWell(
+                          child: Icon(CupertinoIcons.video_camera),
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => LiveCallScreen()));
+                          },
+                        )
                       ],
                     ),
                   ),
