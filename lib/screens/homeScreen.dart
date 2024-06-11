@@ -90,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
               backgroundColor: Color.fromARGB(255, 18, 58, 93),
               child: InkWell(
                 child: Icon(
-                  CupertinoIcons.videocam, // To be changed to bell icon
+                  CupertinoIcons.bell,
                   color: Colors.white,
                 ),
                 onTap: () {
