@@ -48,7 +48,7 @@ class _ChatScreenState extends State<ChatScreen> {
         body: Stack(
           children: [
             Padding(
-              padding: const EdgeInsets.only(left: 30),
+              padding: const EdgeInsets.only(left: 30, top: 10),
               child: Container(
                   height: 50,
                   width: 300,
@@ -77,7 +77,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 child: Column(
                   children: [
                     SizedBox(
-                      height: 40,
+                      height: 50,
                     ),
                     Padding(
                       padding: EdgeInsets.only(top: 20, left: 30),

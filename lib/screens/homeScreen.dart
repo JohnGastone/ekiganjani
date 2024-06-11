@@ -372,6 +372,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 width: 300,
                 height: 50,
                 child: FloatingActionButton(
+                  backgroundColor: Colors.white,
                   onPressed: () {},
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
