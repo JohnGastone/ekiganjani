@@ -181,45 +181,33 @@ class _MyHomePageState extends State<MyHomePage> {
                             decoration: BoxDecoration(
                                 color: Color.fromARGB(255, 244, 241, 241),
                                 borderRadius: BorderRadius.circular(10)),
-                            child: Padding(
-                              padding: const EdgeInsets.only(top: 30),
-                              child: Column(
-                                children: [
-                                  Align(
+                            child: Column(
+                              children: [
+                                Align(
                                     alignment: Alignment.topRight,
-                                    child: Padding(
-                                      padding: const EdgeInsets.only(left: 35),
-                                      child: Container(
-                                        height: 24,
-                                        decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.only(
-                                            topRight: Radius.circular(10),
-                                            bottomLeft: Radius.circular(10),
-                                          ),
-                                          color: Colors.green,
-                                        ),
-                                        child: Center(
-                                            child:
-                                                Icon(CupertinoIcons.bookmark)),
-                                      ),
-                                    ),
-                                  ),
-                                  Icon(
-                                    CupertinoIcons.hand_draw,
+                                    child: Icon(
+                                      CupertinoIcons.bookmark_fill,
+                                      size: 25,
+                                      color: Colors.amberAccent,
+                                    )),
+                                SizedBox(
+                                  height: 20,
+                                ),
+                                Icon(
+                                  CupertinoIcons.hand_draw,
+                                  color: Color.fromARGB(255, 18, 58, 93),
+                                ),
+                                SizedBox(
+                                  height: 30,
+                                ),
+                                Text(
+                                  "Design",
+                                  style: GoogleFonts.spaceMono(
+                                    fontSize: 18,
                                     color: Color.fromARGB(255, 18, 58, 93),
                                   ),
-                                  SizedBox(
-                                    height: 40,
-                                  ),
-                                  Text(
-                                    "Design",
-                                    style: GoogleFonts.spaceMono(
-                                      fontSize: 18,
-                                      color: Color.fromARGB(255, 18, 58, 93),
-                                    ),
-                                  )
-                                ],
-                              ),
+                                )
+                              ],
                             ),
                           ),
                           SizedBox(
@@ -231,26 +219,33 @@ class _MyHomePageState extends State<MyHomePage> {
                             decoration: BoxDecoration(
                                 color: Color.fromARGB(255, 244, 241, 241),
                                 borderRadius: BorderRadius.circular(10)),
-                            child: Padding(
-                              padding: const EdgeInsets.only(top: 30),
-                              child: Column(
-                                children: [
-                                  Icon(
-                                    CupertinoIcons.rocket_fill,
+                            child: Column(
+                              children: [
+                                Align(
+                                    alignment: Alignment.topRight,
+                                    child: Icon(
+                                      CupertinoIcons.bookmark_fill,
+                                      size: 25,
+                                      color: Colors.amberAccent,
+                                    )),
+                                SizedBox(
+                                  height: 20,
+                                ),
+                                Icon(
+                                  CupertinoIcons.rocket_fill,
+                                  color: Color.fromARGB(255, 18, 58, 93),
+                                ),
+                                SizedBox(
+                                  height: 30,
+                                ),
+                                Text(
+                                  "Marketing",
+                                  style: GoogleFonts.spaceMono(
+                                    fontSize: 18,
                                     color: Color.fromARGB(255, 18, 58, 93),
                                   ),
-                                  SizedBox(
-                                    height: 40,
-                                  ),
-                                  Text(
-                                    "Marketing",
-                                    style: GoogleFonts.spaceMono(
-                                      fontSize: 18,
-                                      color: Color.fromARGB(255, 18, 58, 93),
-                                    ),
-                                  )
-                                ],
-                              ),
+                                )
+                              ],
                             ),
                           ),
                           SizedBox(
@@ -262,26 +257,33 @@ class _MyHomePageState extends State<MyHomePage> {
                             decoration: BoxDecoration(
                                 color: Color.fromARGB(255, 244, 241, 241),
                                 borderRadius: BorderRadius.circular(10)),
-                            child: Padding(
-                              padding: const EdgeInsets.only(top: 30),
-                              child: Column(
-                                children: [
-                                  Icon(
-                                    CupertinoIcons.text_badge_checkmark,
+                            child: Column(
+                              children: [
+                                Align(
+                                    alignment: Alignment.topRight,
+                                    child: Icon(
+                                      CupertinoIcons.bookmark_fill,
+                                      size: 25,
+                                      color: Colors.amberAccent,
+                                    )),
+                                SizedBox(
+                                  height: 20,
+                                ),
+                                Icon(
+                                  CupertinoIcons.text_badge_checkmark,
+                                  color: Color.fromARGB(255, 18, 58, 93),
+                                ),
+                                SizedBox(
+                                  height: 30,
+                                ),
+                                Text(
+                                  "Editing",
+                                  style: GoogleFonts.spaceMono(
+                                    fontSize: 18,
                                     color: Color.fromARGB(255, 18, 58, 93),
                                   ),
-                                  SizedBox(
-                                    height: 40,
-                                  ),
-                                  Text(
-                                    "Editing",
-                                    style: GoogleFonts.spaceMono(
-                                      fontSize: 18,
-                                      color: Color.fromARGB(255, 18, 58, 93),
-                                    ),
-                                  )
-                                ],
-                              ),
+                                )
+                              ],
                             ),
                           )
                         ],
