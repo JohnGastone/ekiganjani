@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
       const StudentCourses(),
     ];
     return Scaffold(
-      backgroundColor: Colors.white24,
+      backgroundColor: Color.fromARGB(200, 255, 255, 255),
       appBar: AppBar(
         automaticallyImplyLeading: false,
         backgroundColor: Color.fromARGB(255, 28, 39, 81),
@@ -129,7 +129,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 color: Colors.white),
                           ),
                           SizedBox(
-                            height: 30,
+                            height: 15,
                           ),
                           Container(
                             width: 320,
@@ -158,8 +158,12 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                           ),
                           SizedBox(
-                            height: 20,
+                            height: 10,
                           ),
+                          Text(
+                              "Below are courses that earned\n        a golden badge",
+                              style: GoogleFonts.spaceMono(
+                                  fontSize: 15, color: Colors.white)),
                         ],
                       ),
                     ),
@@ -181,6 +185,25 @@ class _MyHomePageState extends State<MyHomePage> {
                               padding: const EdgeInsets.only(top: 30),
                               child: Column(
                                 children: [
+                                  Align(
+                                    alignment: Alignment.topRight,
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(left: 35),
+                                      child: Container(
+                                        height: 24,
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.only(
+                                            topRight: Radius.circular(10),
+                                            bottomLeft: Radius.circular(10),
+                                          ),
+                                          color: Colors.green,
+                                        ),
+                                        child: Center(
+                                            child:
+                                                Icon(CupertinoIcons.bookmark)),
+                                      ),
+                                    ),
+                                  ),
                                   Icon(
                                     CupertinoIcons.hand_draw,
                                     color: Color.fromARGB(255, 18, 58, 93),
