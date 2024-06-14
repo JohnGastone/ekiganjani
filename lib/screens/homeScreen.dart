@@ -40,6 +40,15 @@ class _MyHomePageState extends State<MyHomePage> {
   List<TrendingCoursesModel> getTrendingCourses =
       List.from(TrendingCourseList.displayTrendingCourses);
 
+  void updateList(String value) {
+    setState(() {
+      getTrendingCourses = TrendingCourseList.displayTrendingCourses
+          .where((element) =>
+              element.courseName!.toLowerCase().contains(value.toLowerCase()))
+          .toList();
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     final List<Widget> bottomBarPages = [
@@ -50,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
       const StudentCourses(),
     ];
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.white24,
       appBar: AppBar(
         automaticallyImplyLeading: false,
         backgroundColor: Color.fromARGB(255, 28, 39, 81),
@@ -129,6 +138,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 color: Colors.white24,
                                 borderRadius: BorderRadius.circular(25)),
                             child: TextField(
+                              onChanged: (value) => updateList(value),
                               style: GoogleFonts.spaceMono(
                                   fontSize: 20, color: Colors.white),
                               decoration: InputDecoration(
@@ -165,7 +175,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             height: 150,
                             width: 100,
                             decoration: BoxDecoration(
-                                color: Colors.white,
+                                color: Color.fromARGB(255, 244, 241, 241),
                                 borderRadius: BorderRadius.circular(10)),
                             child: Padding(
                               padding: const EdgeInsets.only(top: 30),
@@ -196,7 +206,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             height: 150,
                             width: 100,
                             decoration: BoxDecoration(
-                                color: Colors.white,
+                                color: Color.fromARGB(255, 244, 241, 241),
                                 borderRadius: BorderRadius.circular(10)),
                             child: Padding(
                               padding: const EdgeInsets.only(top: 30),
@@ -227,7 +237,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             height: 150,
                             width: 100,
                             decoration: BoxDecoration(
-                                color: Colors.white,
+                                color: Color.fromARGB(255, 244, 241, 241),
                                 borderRadius: BorderRadius.circular(10)),
                             child: Padding(
                               padding: const EdgeInsets.only(top: 30),
@@ -266,7 +276,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         style: GoogleFonts.spaceMono(
                           fontWeight: FontWeight.bold,
                           fontSize: 22,
-                          color: Colors.white,
+                          color: const Color.fromARGB(255, 70, 69, 69),
                         ),
                       ),
                       InkWell(
@@ -305,7 +315,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                     height: 290,
                                     width: 150,
                                     decoration: BoxDecoration(
-                                        color: Colors.white24,
+                                        color:
+                                            Color.fromARGB(255, 244, 241, 241),
                                         borderRadius:
                                             BorderRadius.circular(20)),
                                     child: Column(
@@ -332,7 +343,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                                 getTrendingCourses[index]
                                                     .courseName!,
                                                 style: GoogleFonts.spaceMono(
-                                                    color: Colors.white,
+                                                    color: Colors.grey,
                                                     fontSize: 15,
                                                     fontWeight:
                                                         FontWeight.bold),
