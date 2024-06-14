@@ -50,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
       const StudentCourses(),
     ];
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 28, 39, 81),
+      backgroundColor: Colors.white,
       appBar: AppBar(
         automaticallyImplyLeading: false,
         backgroundColor: Color.fromARGB(255, 28, 39, 81),
@@ -102,134 +102,162 @@ class _MyHomePageState extends State<MyHomePage> {
           SingleChildScrollView(
             child: Column(
               children: [
-                Text(
-                  "Find your favourite\nCourse here!",
-                  style: GoogleFonts.spaceMono(
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                Container(
-                  width: 320,
-                  height: 50,
-                  decoration: BoxDecoration(
-                      color: Colors.white24,
-                      borderRadius: BorderRadius.circular(25)),
-                  child: TextField(
-                    style: GoogleFonts.spaceMono(
-                        fontSize: 20, color: Colors.white),
-                    decoration: InputDecoration(
-                      border: InputBorder.none,
-                      enabledBorder: InputBorder.none,
-                      focusedBorder: InputBorder.none,
-                      fillColor: Colors.transparent, // Add this line
-                      filled: true, // Add this line
-                      prefixIcon:
-                          Icon(CupertinoIcons.search, color: Colors.white),
-                      suffixIcon: Icon(CupertinoIcons.mic, color: Colors.white),
-                      labelText: "Search course",
-                      labelStyle: GoogleFonts.spaceMono(
-                          fontSize: 17, color: Colors.white),
+                Stack(children: [
+                  CustomPaint(
+                    painter: CurvePainter(),
+                    child: Container(
+                      height: 400,
+                      width: double.maxFinite,
+                      decoration: BoxDecoration(),
+                      child: Column(
+                        children: [
+                          SizedBox(height: 20),
+                          Text(
+                            "Find your favourite\nCourse here!",
+                            style: GoogleFonts.spaceMono(
+                                fontSize: 30,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
+                          ),
+                          SizedBox(
+                            height: 30,
+                          ),
+                          Container(
+                            width: 320,
+                            height: 50,
+                            decoration: BoxDecoration(
+                                color: Colors.white24,
+                                borderRadius: BorderRadius.circular(25)),
+                            child: TextField(
+                              style: GoogleFonts.spaceMono(
+                                  fontSize: 20, color: Colors.white),
+                              decoration: InputDecoration(
+                                border: InputBorder.none,
+                                enabledBorder: InputBorder.none,
+                                focusedBorder: InputBorder.none,
+                                fillColor: Colors.transparent, // Add this line
+                                filled: true, // Add this line
+                                prefixIcon: Icon(CupertinoIcons.search,
+                                    color: Colors.white),
+                                suffixIcon: Icon(CupertinoIcons.mic,
+                                    color: Colors.white),
+                                labelText: "Search course",
+                                labelStyle: GoogleFonts.spaceMono(
+                                    fontSize: 17, color: Colors.white),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 20,
+                          ),
+                        ],
+                      ),
                     ),
                   ),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Container(
-                      height: 150,
-                      width: 100,
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(10)),
-                      child: Padding(
-                        padding: const EdgeInsets.only(top: 30),
-                        child: Column(
-                          children: [
-                            Icon(
-                              CupertinoIcons.hand_draw,
-                              color: Color.fromARGB(255, 18, 58, 93),
-                            ),
-                            SizedBox(
-                              height: 40,
-                            ),
-                            Text(
-                              "Design",
-                              style: GoogleFonts.spaceMono(
-                                fontSize: 18,
-                                color: Color.fromARGB(255, 18, 58, 93),
+                  Positioned(
+                    top: 200,
+                    child: Padding(
+                      padding: const EdgeInsets.all(14.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            height: 150,
+                            width: 100,
+                            decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(10)),
+                            child: Padding(
+                              padding: const EdgeInsets.only(top: 30),
+                              child: Column(
+                                children: [
+                                  Icon(
+                                    CupertinoIcons.hand_draw,
+                                    color: Color.fromARGB(255, 18, 58, 93),
+                                  ),
+                                  SizedBox(
+                                    height: 40,
+                                  ),
+                                  Text(
+                                    "Design",
+                                    style: GoogleFonts.spaceMono(
+                                      fontSize: 18,
+                                      color: Color.fromARGB(255, 18, 58, 93),
+                                    ),
+                                  )
+                                ],
                               ),
-                            )
-                          ],
-                        ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 15,
+                          ),
+                          Container(
+                            height: 150,
+                            width: 100,
+                            decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(10)),
+                            child: Padding(
+                              padding: const EdgeInsets.only(top: 30),
+                              child: Column(
+                                children: [
+                                  Icon(
+                                    CupertinoIcons.rocket_fill,
+                                    color: Color.fromARGB(255, 18, 58, 93),
+                                  ),
+                                  SizedBox(
+                                    height: 40,
+                                  ),
+                                  Text(
+                                    "Marketing",
+                                    style: GoogleFonts.spaceMono(
+                                      fontSize: 18,
+                                      color: Color.fromARGB(255, 18, 58, 93),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 15,
+                          ),
+                          Container(
+                            height: 150,
+                            width: 100,
+                            decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(10)),
+                            child: Padding(
+                              padding: const EdgeInsets.only(top: 30),
+                              child: Column(
+                                children: [
+                                  Icon(
+                                    CupertinoIcons.text_badge_checkmark,
+                                    color: Color.fromARGB(255, 18, 58, 93),
+                                  ),
+                                  SizedBox(
+                                    height: 40,
+                                  ),
+                                  Text(
+                                    "Editing",
+                                    style: GoogleFonts.spaceMono(
+                                      fontSize: 18,
+                                      color: Color.fromARGB(255, 18, 58, 93),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          )
+                        ],
                       ),
                     ),
-                    Container(
-                      height: 150,
-                      width: 100,
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(10)),
-                      child: Padding(
-                        padding: const EdgeInsets.only(top: 30),
-                        child: Column(
-                          children: [
-                            Icon(
-                              CupertinoIcons.rocket_fill,
-                              color: Color.fromARGB(255, 18, 58, 93),
-                            ),
-                            SizedBox(
-                              height: 40,
-                            ),
-                            Text(
-                              "Marketing",
-                              style: GoogleFonts.spaceMono(
-                                fontSize: 18,
-                                color: Color.fromARGB(255, 18, 58, 93),
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                    ),
-                    Container(
-                      height: 150,
-                      width: 100,
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(10)),
-                      child: Padding(
-                        padding: const EdgeInsets.only(top: 30),
-                        child: Column(
-                          children: [
-                            Icon(
-                              CupertinoIcons.text_badge_checkmark,
-                              color: Color.fromARGB(255, 18, 58, 93),
-                            ),
-                            SizedBox(
-                              height: 40,
-                            ),
-                            Text(
-                              "Editing",
-                              style: GoogleFonts.spaceMono(
-                                fontSize: 18,
-                                color: Color.fromARGB(255, 18, 58, 93),
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                    )
-                  ],
-                ),
+                  )
+                ]),
                 Padding(
-                  padding: const EdgeInsets.only(left: 10, right: 10, top: 20),
+                  padding: const EdgeInsets.only(left: 10, right: 10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -409,5 +437,30 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       )),
     );
+  }
+}
+
+class CurvePainter extends CustomPainter {
+  @override
+  void paint(Canvas canvas, Size size) {
+    var paint = Paint();
+    paint.color = Color.fromARGB(255, 28, 39, 81);
+    paint.style = PaintingStyle.fill;
+
+    var path = Path();
+
+    path.moveTo(0, size.height * 0.6);
+    path.quadraticBezierTo(
+        size.width / 2, size.height, size.width, size.height * 0.6);
+    path.lineTo(size.width, 0);
+    path.lineTo(0, 0);
+    path.close();
+
+    canvas.drawPath(path, paint);
+  }
+
+  @override
+  bool shouldRepaint(CustomPainter oldDelegate) {
+    return false;
   }
 }
